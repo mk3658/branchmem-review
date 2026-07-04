@@ -119,5 +119,5 @@
     "confidence_rule": 0.0,
     "three_way_llm": 0.004166666666666667
   },
-  "note": "expanded post-hoc secondary analysis (max_conflict_keys raised from 15 to 50, max_tokens raised to 8000 to avoid response truncation at this larger size) in response to peer review asking for a larger real-data sample; 8 rows is the FULL Conflict_Resolution split of MemoryAgentBench, not a cost-driven subsample -- no larger real row count is available from this dataset. NOT part of ANALYSIS_PLAN.md confirmatory tests."
+  "note": "expanded post-hoc secondary analysis (max_conflict_keys raised from 15 to 50, max_tokens raised to 8000 to avoid response truncation at this larger size) to gain a larger real-data sample; 8 rows is the FULL Conflict_Resolution split of MemoryAgentBench, not a cost-driven subsample -- no larger real row count is available from this dataset. NOT part of ANALYSIS_PLAN.md confirmatory tests."
 }

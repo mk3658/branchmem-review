@@ -1,6 +1,5 @@
-"""RawTextLLMMerge: the minimal-metadata LLM ablation approved in response to
-peer review (ACL review action item #5, `paper/reviews/acl2027_review.md`
-Sections 3/4/9). TwoWayLLMMerge already withholds the common ancestor;
+"""RawTextLLMMerge: the minimal-metadata LLM ablation, added as a later
+post-hoc check. TwoWayLLMMerge already withholds the common ancestor;
 RawTextLLMMerge goes further and withholds source, confidence, and
 timestamps too — the LLM sees only the entity, predicate, and each branch's
 raw conflicting value, nothing else.

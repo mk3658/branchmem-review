@@ -195,6 +195,6 @@
     "ci_high": 0.04285714285714286,
     "wilcoxon_statistic": 3.0,
     "p_value": 0.4496917979688909,
-    "note": "exploratory robustness check, not part of the preregistered ANALYSIS_PLAN.md confirmatory tests; run post-hoc after Phase 6 in response to peer review, disclosed as such"
+    "note": "exploratory robustness check, not part of the preregistered ANALYSIS_PLAN.md confirmatory tests; run post-hoc after Phase 6, disclosed as such"
   }
 }

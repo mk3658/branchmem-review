@@ -10,7 +10,7 @@
     ],
     "n_resolvable_pairs": 120
   },
-  "note": "exploratory, post-hoc statistical-power expansion added in response to peer review (action item #8: resolvable-category sample size); NOT part of ANALYSIS_PLAN.md's confirmatory tests and NOT pooled with results/final/results.json or results/final/stats_output.json. A genuinely new, disjoint-seed (2029-2031) scenario sample of the same size and configuration as the locked run (n=60 scenarios, 120 resolvable pairs), scored independently.",
+  "note": "exploratory, post-hoc statistical-power expansion for the resolvable-category sample size; NOT part of ANALYSIS_PLAN.md's confirmatory tests and NOT pooled with results/final/results.json or results/final/stats_output.json. A genuinely new, disjoint-seed (2029-2031) scenario sample of the same size and configuration as the locked run (n=60 scenarios, 120 resolvable pairs), scored independently.",
   "mean_accuracy": {
     "last_writer_wins": 0.7095238095238096,
     "naive_concat": 0.6904761904761905,

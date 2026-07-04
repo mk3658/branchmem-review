@@ -64,8 +64,6 @@ randomizes `set`/string-hash iteration order per process by default).
 source .venv/bin/activate
 python -m pytest tests/ -q                      # unit tests, no API key needed
 python scripts/run_experiment.py                # locked Phase 6 run — reads from llm_cache/, $0 if cache populated
-python paper/make_figures.py                     # regenerate all 6 figures from results/final/*.json
-cd paper && tectonic acl_latex.tex               # recompile the PDF
 ```
 
 Every real LLM call across every round of this project (pilot, locked run,

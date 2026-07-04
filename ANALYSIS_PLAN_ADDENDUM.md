@@ -1,9 +1,9 @@
 # ANALYSIS_PLAN_ADDENDUM.md
 
 `ANALYSIS_PLAN.md` is locked and was not edited after Phase 6. Everything in
-this file is **post-hoc and exploratory** — added in response to peer
-review, after seeing the locked results. None of it is folded into the
-confirmatory tests (Table 1/2 in the paper) or treated as satisfying H1/H2/H3.
+this file is **post-hoc and exploratory** — added after seeing the locked
+results. None of it is folded into the confirmatory tests (Table 1/2 in the
+paper) or treated as satisfying H1/H2/H3.
 Where a number here is compared against a locked-run number, the comparison
 itself is descriptive, not a new preregistered test.
 

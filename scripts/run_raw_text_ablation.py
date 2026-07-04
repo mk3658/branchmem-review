@@ -2,9 +2,8 @@
 """Post-hoc, non-preregistered ablation: RawTextLLMMerge on the same locked
 n=60 / 180-conflict-pair scenario set used for `results/final/results.json`.
 
-Added in response to the ACL review's action item #5
-(`paper/reviews/acl2027_review.md` Sections 3, 4.8, 9.5), explicitly
-APPROVED by the user for real API spend. This does NOT modify
+Added as a later post-hoc check, explicitly approved for real API spend.
+This does NOT modify
 `scripts/run_experiment.py`, `results/final/results.json`, or
 `results/final/stats_output.json` — those remain the locked confirmatory
 artifact. This script only regenerates the identical scenario set (same
@@ -113,8 +112,8 @@ def main() -> None:
         "mean_accuracy_by_category": category_means,
         "per_scenario": per_scenario,
         "note": (
-            "exploratory, post-hoc ablation added in response to peer review "
-            "(action item #5: minimal LLM-merge condition with NO structured "
+            "exploratory, post-hoc ablation "
+            "(minimal LLM-merge condition with NO structured "
             "metadata -- no ancestor, no source, no confidence, only the two "
             "raw conflicting values); not part of ANALYSIS_PLAN.md confirmatory "
             "tests. Same n=60 locked scenarios as results/final/results.json "

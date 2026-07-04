@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""Author self-audit of `parse_context_facts`' extraction precision (ACL
-review action items #3/#9, `paper/reviews/acl2027_review.md`).
+"""Author self-audit of `parse_context_facts`' extraction precision.
 
 `branchmem/benchmark/mab_extension.py` reports 99.9% *coverage* (fraction of
 context lines the regex parser matches at all) but never *precision*
@@ -24,8 +23,7 @@ Usage: source .venv/bin/activate && PYTHONPATH=. python
 scripts/audit_parser_precision.py --n 50 --seed 12345
 Then manually inspect the written `sampled_triples` against their
 `raw_line` and fill in `n_errors_found` / `precision_point_estimate` /
-`precision_95pct_clopper_pearson_ci` by hand (see Section 3.5 of
-paper/acl_latex.tex for the audit actually performed).
+`precision_95pct_clopper_pearson_ci` by hand.
 """
 
 from __future__ import annotations

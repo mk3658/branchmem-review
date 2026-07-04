@@ -609,7 +609,7 @@
       }
     }
   ],
-  "note": "exploratory, post-hoc ablation added in response to peer review (action item #5: minimal LLM-merge condition with NO structured metadata -- no ancestor, no source, no confidence, only the two raw conflicting values); not part of ANALYSIS_PLAN.md confirmatory tests. Same n=60 locked scenarios as results/final/results.json (verified by matching scenario_id).",
+  "note": "exploratory, post-hoc ablation (minimal LLM-merge condition with NO structured metadata -- no ancestor, no source, no confidence, only the two raw conflicting values); not part of ANALYSIS_PLAN.md confirmatory tests. Same n=60 locked scenarios as results/final/results.json (verified by matching scenario_id).",
   "paired_comparisons": {
     "three_way_vs_raw_text_llm": {
       "mean_diff": 0.2238095238095238,

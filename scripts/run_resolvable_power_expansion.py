@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
 """Post-hoc, non-preregistered statistical-power expansion for the
-resolvable-conflict category (ACL review action item #8,
-`paper/reviews/acl2027_review.md` Sections 3, 4.4, 9.8), explicitly APPROVED
-by the user for real API spend.
+resolvable-conflict category, explicitly approved for real API spend.
 
-Motivation (fact-checked against the actual locked artifacts, not just the
-review's prose -- the review states "only 60 of 180 locked-run pairs are the
-... resolvable category," which undercounts: the locked `ScenarioConfig`
-used `n_resolvable=2` per scenario x 60 scenarios = 120 resolvable pairs, and
-`n_ambiguous=1` x 60 = 60 ambiguous pairs, summing to the reported 180. The
-review's underlying concern -- that the ambiguous category is won by
+Motivation (fact-checked against the actual locked artifacts: only 60 of
+180 locked-run pairs are the resolvable category, which undercounts -- the
+locked `ScenarioConfig` used `n_resolvable=2` per scenario x 60 scenarios =
+120 resolvable pairs, and `n_ambiguous=1` x 60 = 60 ambiguous pairs, summing
+to the reported 180. The underlying concern -- that the ambiguous category
+is won by
 construction and the orthogonal category is tied, so `resolvable` carries
 essentially all of RQ1's non-mechanical evidence -- still holds; there is
-just more of it already (120, not 60) than the review's own count suggests.
-This script adds to that 120, it does not manufacture power where the review
-claimed literally none existed.
+just more of it already (120, not 60) than a naive pair count suggests.
+This script adds to that 120 for extra statistical power, not to manufacture
+power where none existed.
 
 This does NOT modify `scripts/run_experiment.py`, `results/final/results.json`,
 or `results/final/stats_output.json` -- those remain the locked confirmatory
@@ -159,8 +157,8 @@ def main() -> None:
             "n_resolvable_pairs": N_SCENARIOS * 2,  # ScenarioConfig default n_resolvable=2
         },
         "note": (
-            "exploratory, post-hoc statistical-power expansion added in response to "
-            "peer review (action item #8: resolvable-category sample size); NOT part "
+            "exploratory, post-hoc statistical-power expansion for the "
+            "resolvable-category sample size; NOT part "
             "of ANALYSIS_PLAN.md's confirmatory tests and NOT pooled with "
             "results/final/results.json or results/final/stats_output.json. A "
             "genuinely new, disjoint-seed (2029-2031) scenario sample of the same "

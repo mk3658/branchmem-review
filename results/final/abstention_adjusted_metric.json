@@ -15,5 +15,5 @@
     "conditional_on_commit_accuracy": null,
     "abstention_rate": 1.0
   },
-  "note": "exploratory metric added post-hoc in response to peer review; separates calibrated abstention from genuine commit-time error. NOT part of ANALYSIS_PLAN.md confirmatory tests. Computed entirely from cached model calls, no new API spend."
+  "note": "exploratory metric added post-hoc; separates calibrated abstention from genuine commit-time error. NOT part of ANALYSIS_PLAN.md confirmatory tests. Computed entirely from cached model calls, no new API spend."
 }

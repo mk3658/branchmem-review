@@ -108,5 +108,5 @@
     "branch_discard_fewer_updates": 0.47155414030414033,
     "three_way_llm": 0.05555555555555555
   },
-  "note": "exploratory secondary analysis on real MemoryAgentBench data, run post-hoc after the Phase 6 locked run in response to peer review; NOT part of the preregistered ANALYSIS_PLAN.md confirmatory tests. No ambiguous-category conflicts exist in this data (MAB Fact Consolidation is deterministic by construction)."
+  "note": "exploratory secondary analysis on real MemoryAgentBench data, run post-hoc after the Phase 6 locked run; NOT part of the preregistered ANALYSIS_PLAN.md confirmatory tests. No ambiguous-category conflicts exist in this data (MAB Fact Consolidation is deterministic by construction)."
 }

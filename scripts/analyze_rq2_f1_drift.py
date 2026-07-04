@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""Investigates the RQ2 judge F1 drift the review flagged (action item #6,
-`paper/reviews/acl2027_review.md` detailed comment #5): LLM-judge F1 = 0.966
-on the pilot set (20 scenarios, 60 pairs) vs 0.986 on the locked set (60
-scenarios, 180 pairs).
+"""Investigates the RQ2 judge F1 drift: LLM-judge F1 = 0.966 on the pilot
+set (20 scenarios, 60 pairs) vs 0.986 on the locked set (60 scenarios, 180
+pairs).
 
 No new API calls: regenerates the exact pilot and locked scenario sets
 (same seeds/configs as `scripts/run_pilot.py` and `scripts/run_experiment.py`)
@@ -71,7 +70,7 @@ def build_locked_pairs():
         # actual call (run_full_benchmark(..., scenario_config_kwargs=None)) --
         # i.e. ScenarioConfig defaults (n_orthogonal_a=n_orthogonal_b=2), NOT the
         # n_orthogonal_a=n_orthogonal_b=1 written in ANALYSIS_PLAN.md sec.1 (a
-        # documentation discrepancy, disclosed in paper/acl_latex.tex's
+        # documentation discrepancy, not a results change -- see the paper's
         # "Locked Scenario Configuration" appendix). Reproducing the code's
         # actual behavior here, not the plan document's prose, is what makes
         # this a faithful replay.

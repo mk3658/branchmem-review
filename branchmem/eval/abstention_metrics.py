@@ -1,8 +1,8 @@
 """Abstention-aware metrics: separates calibrated abstention from genuine
 commit-time error, since raw accuracy scores both as equally "not correct."
 
-Added post-hoc in response to peer review (see ANALYSIS_PLAN_ADDENDUM.md,
-item A1). Every function here is a pure computation over already-scored
+Added post-hoc (see ANALYSIS_PLAN_ADDENDUM.md, item A1). Every function
+here is a pure computation over already-scored
 per-question detail records (see branchmem.evaluation.metrics.score_downstream's
 `detail` list) or simple counts; nothing here makes an LLM call.
 

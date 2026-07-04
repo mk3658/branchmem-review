@@ -365,7 +365,7 @@
     "confidence_rule": 0.9619047619047619,
     "two_way_llm": 0.9261904761904762
   },
-  "note": "exploratory, post-hoc baselines added in response to peer review; not part of ANALYSIS_PLAN.md confirmatory tests",
+  "note": "exploratory, post-hoc baselines added after the locked run; not part of ANALYSIS_PLAN.md confirmatory tests",
   "paired_comparisons": {
     "three_way_vs_confidence_rule": {
       "mean_diff": -0.026190476190476195,
