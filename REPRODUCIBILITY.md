@@ -76,6 +76,6 @@ was already run once.
 ## Total call volume
 
 The paper's Experimental Setup section reports the headline total for the
-locked run ($460$ calls; $111{,}403$ input / $45{,}462$ output tokens);
+locked run (460 calls; 111,403 input / 45,462 output tokens);
 later post-hoc rounds add further cached calls under `llm_cache/`, all
 released alongside this repository.

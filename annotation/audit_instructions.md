@@ -37,8 +37,9 @@ see `results/final/parser_precision_self_audit.json` — that file already
 contains the author's own self-audit (labeled as such, not independent) of
 50 randomly sampled extractions against their source context lines. A
 genuinely independent audit of that same sample would be the most direct
-next step, since Section 3.5 of the paper explicitly identifies it as the
-single largest unresolved validation gap.
+next step: the paper's Limitations section states plainly that whether
+"resolvable" ground truth and the noise parameter reflect real-world
+provenance reliability "remains completely unvalidated."
 
 ## What NOT to do
 

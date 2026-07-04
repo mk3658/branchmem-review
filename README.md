@@ -179,15 +179,22 @@ Full numbers, category breakdowns, and every caveat: `results/final/findings.md`
 (every post-hoc addition, disclosed separately), and `CHANGELOG.md`
 (chronological index). Reproduction details: `REPRODUCIBILITY.md`.
 
-## Known limitations (see findings.md and ANALYSIS_PLAN_ADDENDUM.md for the full list)
+## Known limitations (see the paper's Limitations section, `findings.md`, and `ANALYSIS_PLAN_ADDENDUM.md` for full detail)
 
+- **The headline effect is contingent on an engineered signal, demonstrated
+  not merely hypothesized — the single most important caveat to this
+  project's aggregate numbers.** On real content where that signal is
+  absent (MemoryAgentBench), `ThreeWayLLMMerge` scores *below every naive
+  baseline* (0.004 vs. 0.47–0.53), the opposite ranking from the synthetic
+  benchmark.
 - Single, cheap LLM (`gpt-5.4-nano`) for the confirmatory results; robustness
   checks cover a same-provider swap (`gpt-5.4-mini`) and a different-vendor
   swap (`claude-haiku-4-5`), both replicating the key findings — but only
   one cheap model per vendor was tested, and no open-weight model.
 - The real-content negative result rests on 8 MemoryAgentBench rows (230
   conflicts after raising a per-row cap) — the full available dataset for
-  this task, not a cost-driven subsample, but still a small sample.
+  this task, not a cost-driven subsample, but still a small sample; purely
+  descriptive, with no significance tests.
 - No independent (non-author) validation of any ground-truth label; an
   audit protocol and sampled item set are released (`annotation/`) to
   support independent validation, but none has been performed for this
@@ -195,3 +202,10 @@ Full numbers, category breakdowns, and every caveat: `results/final/findings.md`
 - `ThreeWayLLMMerge` and `LLMJudgeConflictDetector` were called once per
   scenario/pair (not majority-vote across repeats), a preregistered
   cost/variance tradeoff — see `ANALYSIS_PLAN.md` sec. 6.
+- The branch-discard (RQ3) effect is partly a benchmark-construction
+  artifact — it always includes orthogonal questions that branch-discard
+  structurally loses — disclosed in advance, not discovered after the fact.
+- The evaluation's own scoring rule is inconsistent: it credits
+  `flagged_unresolved` on the synthetic ambiguous category but treats the
+  identical behavior as wrong on MemoryAgentBench's resolvable category; a
+  consistent abstention-crediting rule is future work.
