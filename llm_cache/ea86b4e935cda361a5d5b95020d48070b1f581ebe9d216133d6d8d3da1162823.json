@@ -1,0 +1,48 @@
+{
+  "text": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"ivan\",\n      \"predicate\": \"hobby\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both branches provide observation-sourced values with equal confidence (0.7) and no distinguishing signal to prefer one.\"\n    },\n    {\n      \"entity\": \"ivan\",\n      \"predicate\": \"manager_name\",\n      \"resolution\": \"kept_from_b\",\n      \"value\": \"taylor reyes\",\n      \"justification\": \"Branch B is user-sourced with higher confidence (0.95) than Branch A's inference (0.55), so it is more reliable.\"\n    },\n    {\n      \"entity\": \"ivan\",\n      \"predicate\": \"team\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"platform\",\n      \"justification\": \"Branch A is user-sourced with higher confidence (0.95) than Branch B's inference (0.55), so it is more reliable.\"\n    }\n  ]\n}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 541,
+  "output_tokens": 223,
+  "raw": {
+    "id": "chatcmpl-DxgOkVx20KbayA3qnSV8VFbpqQxJM",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"ivan\",\n      \"predicate\": \"hobby\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both branches provide observation-sourced values with equal confidence (0.7) and no distinguishing signal to prefer one.\"\n    },\n    {\n      \"entity\": \"ivan\",\n      \"predicate\": \"manager_name\",\n      \"resolution\": \"kept_from_b\",\n      \"value\": \"taylor reyes\",\n      \"justification\": \"Branch B is user-sourced with higher confidence (0.95) than Branch A's inference (0.55), so it is more reliable.\"\n    },\n    {\n      \"entity\": \"ivan\",\n      \"predicate\": \"team\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"platform\",\n      \"justification\": \"Branch A is user-sourced with higher confidence (0.95) than Branch B's inference (0.55), so it is more reliable.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783116702,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 223,
+      "prompt_tokens": 541,
+      "total_tokens": 764,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "Branch A's current value/source/confidence for each conflicting key:\n{\n  \"ivan|hobby\": {\n    \"value\": \"reading\",\n    \"source\": \"observation\",\n    \"confidence\": 0.7\n  },\n  \"ivan|manager_name\": {\n    \"value\": \"casey park\",\n    \"source\": \"inference\",\n    \"confidence\": 0.55\n  },\n  \"ivan|team\": {\n    \"value\": \"platform\",\n    \"source\": \"user\",\n    \"confidence\": 0.95\n  }\n}\n\nBranch B's current value/source/confidence for each conflicting key:\n{\n  \"ivan|hobby\": {\n    \"value\": \"chess\",\n    \"source\": \"observation\",\n    \"confidence\": 0.7\n  },\n  \"ivan|manager_name\": {\n    \"value\": \"taylor reyes\",\n    \"source\": \"user\",\n    \"confidence\": 0.95\n  },\n  \"ivan|team\": {\n    \"value\": \"mobile\",\n    \"source\": \"inference\",\n    \"confidence\": 0.55\n  }\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged while disconnected from each other. You are NOT given the common ancestor's value for these keys \u2014 only each branch's current value, source, and confidence. 'source' is how that update was recorded: \"user\" means the user explicitly stated or corrected it; \"inference\" means the agent inferred or guessed it; \"observation\" means the agent observed it indirectly. Resolve each conflict using whatever signal actually distinguishes the two updates \u2014 e.g. a user-sourced, higher-confidence update is ordinarily more trustworthy than an inferred, lower-confidence one. Do NOT use timestamps to decide, even if you can infer relative recency \u2014 two branches that were disconnected from each other have no shared clock, so 'later' does not mean 'more correct' here. If source and confidence give no real basis to prefer one branch over the other, explicitly flag it as unresolvable rather than guessing."
+}

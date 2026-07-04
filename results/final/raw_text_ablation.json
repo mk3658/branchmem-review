@@ -1,0 +1,624 @@
+{
+  "mean_accuracy": {
+    "raw_text_llm": 0.7119047619047619
+  },
+  "mean_accuracy_by_category": {
+    "orthogonal": 1.0,
+    "resolvable": 0.0,
+    "ambiguous": 0.9833333333333333
+  },
+  "per_scenario": [
+    {
+      "scenario_id": "synth_2026_0000",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0001",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0002",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0003",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0004",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0005",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0006",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0007",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.5714285714285714,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 0.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0008",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0009",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0010",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0011",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0012",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0013",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0014",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0015",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0016",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0017",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0018",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0019",
+      "divergence_span": 4.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0000",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0001",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0002",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0003",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0004",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0005",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0006",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0007",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0008",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0009",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0010",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0011",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0012",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0013",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0014",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0015",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0016",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0017",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0018",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2027_0019",
+      "divergence_span": 10.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0000",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0001",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0002",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0003",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0004",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0005",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0006",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0007",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0008",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0009",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0010",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0011",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0012",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0013",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0014",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0015",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0016",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0017",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0018",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2028_0019",
+      "divergence_span": 20.0,
+      "raw_text_llm_accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    }
+  ],
+  "note": "exploratory, post-hoc ablation added in response to peer review (action item #5: minimal LLM-merge condition with NO structured metadata -- no ancestor, no source, no confidence, only the two raw conflicting values); not part of ANALYSIS_PLAN.md confirmatory tests. Same n=60 locked scenarios as results/final/results.json (verified by matching scenario_id).",
+  "paired_comparisons": {
+    "three_way_vs_raw_text_llm": {
+      "mean_diff": 0.2238095238095238,
+      "sd_diff": 0.09616178381235899,
+      "ci_low": 0.19999999999999996,
+      "ci_high": 0.2476190476190476,
+      "wilcoxon_statistic": 0.0,
+      "p_value": 1.6910882440581696e-11
+    },
+    "note": "exploratory, post-hoc paired comparison; not part of ANALYSIS_PLAN.md confirmatory tests"
+  }
+}

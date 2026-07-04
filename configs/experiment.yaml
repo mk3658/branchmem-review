@@ -1,0 +1,12 @@
+# Overrides applied on top of default.yaml for the locked Phase 6 experiment
+# run. Finalized in ANALYSIS_PLAN.md (Phase 5) — do not change without
+# logging the change and reason in PROGRESS.md's "Deviations" section.
+
+llm:
+  backend: openai_compatible
+  model: gpt-5.4-nano   # cheapest available model on the provided key; see ANALYSIS_PLAN.md sec.1
+
+scenario:
+  n_scenarios: 60        # power-justified in ANALYSIS_PLAN.md sec.5
+  seed: 2026
+  divergence_spans: [4.0, 10.0, 20.0]   # short / medium / long, evenly split across scenarios

@@ -1,0 +1,94 @@
+{
+  "run_metadata": {
+    "seed": 2026,
+    "n_scenarios": 60,
+    "model": "gpt-5.4-nano",
+    "divergence_spans": [
+      4.0,
+      10.0,
+      20.0
+    ],
+    "n_conflict_pairs": 180
+  },
+  "min_effect_size": 0.1,
+  "f1_tolerance": 0.05,
+  "alpha": 0.05,
+  "H1_three_way_vs_naive_baselines": {
+    "comparisons": [
+      {
+        "comparison": "three_way_llm_vs_last_writer_wins",
+        "mean_diff": 0.21904761904761905,
+        "sd_diff": 0.1378459245122851,
+        "ci_low": 0.18333333333333335,
+        "ci_high": 0.2523809523809524,
+        "wilcoxon_statistic": 25.5,
+        "raw_p_value": 5.96566639358989e-11,
+        "holm_adjusted_p_value": 1.193133278717978e-10,
+        "reject_null_at_corrected_alpha": true,
+        "meets_min_effect_size": true,
+        "supported": true
+      },
+      {
+        "comparison": "three_way_llm_vs_naive_concat",
+        "mean_diff": 0.2357142857142857,
+        "sd_diff": 0.12838296652896322,
+        "ci_low": 0.20476190476190476,
+        "ci_high": 0.26666666666666666,
+        "wilcoxon_statistic": 4.5,
+        "raw_p_value": 7.381115020645172e-11,
+        "holm_adjusted_p_value": 1.193133278717978e-10,
+        "reject_null_at_corrected_alpha": true,
+        "meets_min_effect_size": true,
+        "supported": true
+      }
+    ],
+    "hypothesis_supported": true
+  },
+  "H2_three_way_vs_branch_discard": {
+    "comparisons": [
+      {
+        "comparison": "three_way_llm_vs_branch_discard_always_b",
+        "mean_diff": 0.4928571428571428,
+        "sd_diff": 0.13520677376042287,
+        "ci_low": 0.4595238095238095,
+        "ci_high": 0.5261904761904762,
+        "wilcoxon_statistic": 0.0,
+        "raw_p_value": 9.213738001119418e-12,
+        "holm_adjusted_p_value": 3.6854952004477674e-11,
+        "reject_null_at_corrected_alpha": true,
+        "meets_min_effect_size": true,
+        "supported": true
+      },
+      {
+        "comparison": "three_way_llm_vs_branch_discard_fewer_updates",
+        "mean_diff": 0.4928571428571428,
+        "sd_diff": 0.13520677376042287,
+        "ci_low": 0.4595238095238095,
+        "ci_high": 0.5261904761904762,
+        "wilcoxon_statistic": 0.0,
+        "raw_p_value": 9.213738001119418e-12,
+        "holm_adjusted_p_value": 3.6854952004477674e-11,
+        "reject_null_at_corrected_alpha": true,
+        "meets_min_effect_size": true,
+        "supported": true
+      }
+    ],
+    "hypothesis_supported": true
+  },
+  "H3_cheap_detectors_vs_llm_judge": {
+    "embedding_threshold": {
+      "f1": 0.9565217391304348,
+      "llm_judge_f1": 0.9859154929577464,
+      "gap": 0.029393753827311575,
+      "within_tolerance": true,
+      "supported": true
+    },
+    "nli": {
+      "f1": 0.9253731343283582,
+      "llm_judge_f1": 0.9859154929577464,
+      "gap": 0.06054235862938817,
+      "within_tolerance": false,
+      "supported": false
+    }
+  }
+}

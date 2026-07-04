@@ -1,0 +1,58 @@
+{
+  "note": "Balanced conflict-detector benchmark (ANALYSIS_PLAN_ADDENDUM.md item A3). The locked run's conflict pairs are all genuine conflicts by construction (precision is mechanically 1.0). This set adds five non-conflict categories alongside genuine contradictions so precision/specificity/FPR/AUROC are actually measured, not assumed.",
+  "pairs": [
+    {"entity": "alice", "predicate": "favorite_color", "value_a": "blue", "value_b": "red", "category": "contradiction", "is_conflict": true},
+    {"entity": "bob", "predicate": "location", "value_a": "lives in Boston", "value_b": "lives in Seattle", "category": "contradiction", "is_conflict": true},
+    {"entity": "carla", "predicate": "diet", "value_a": "is vegetarian", "value_b": "eats meat every day", "category": "contradiction", "is_conflict": true},
+    {"entity": "dave", "predicate": "job_title", "value_a": "works as a nurse", "value_b": "works as a software engineer", "category": "contradiction", "is_conflict": true},
+    {"entity": "elena", "predicate": "marital_status", "value_a": "is married", "value_b": "is single", "category": "contradiction", "is_conflict": true},
+    {"entity": "farhan", "predicate": "car", "value_a": "drives a red sedan", "value_b": "does not own a car", "category": "contradiction", "is_conflict": true},
+    {"entity": "gina", "predicate": "sleep_schedule", "value_a": "is a morning person", "value_b": "is a night owl who sleeps until noon", "category": "contradiction", "is_conflict": true},
+    {"entity": "hassan", "predicate": "smoking", "value_a": "smokes a pack a day", "value_b": "has never smoked", "category": "contradiction", "is_conflict": true},
+
+    {"entity": "alice", "predicate": "location", "value_a": "lives in NYC", "value_b": "resides in New York City", "category": "paraphrase", "is_conflict": false},
+    {"entity": "bob", "predicate": "job_title", "value_a": "works as a doctor", "value_b": "is employed as a physician", "category": "paraphrase", "is_conflict": false},
+    {"entity": "carla", "predicate": "favorite_color", "value_a": "loves the color blue", "value_b": "blue is her favorite color", "category": "paraphrase", "is_conflict": false},
+    {"entity": "dave", "predicate": "diet", "value_a": "does not eat meat", "value_b": "is vegetarian", "category": "paraphrase", "is_conflict": false},
+    {"entity": "elena", "predicate": "sleep_schedule", "value_a": "wakes up early", "value_b": "is an early riser", "category": "paraphrase", "is_conflict": false},
+    {"entity": "farhan", "predicate": "marital_status", "value_a": "got married last year", "value_b": "is currently married", "category": "paraphrase", "is_conflict": false},
+    {"entity": "gina", "predicate": "car", "value_a": "owns a Toyota Camry", "value_b": "drives a Toyota Camry sedan", "category": "paraphrase", "is_conflict": false},
+    {"entity": "hassan", "predicate": "location", "value_a": "based in San Francisco", "value_b": "lives in SF", "category": "paraphrase", "is_conflict": false},
+
+    {"entity": "alice", "predicate": "diet", "value_a": "likes Italian food", "value_b": "enjoys eating pasta", "category": "entailment", "is_conflict": false},
+    {"entity": "bob", "predicate": "hobby", "value_a": "plays team sports", "value_b": "plays soccer on weekends", "category": "entailment", "is_conflict": false},
+    {"entity": "carla", "predicate": "pet", "value_a": "owns a dog", "value_b": "has a golden retriever", "category": "entailment", "is_conflict": false},
+    {"entity": "dave", "predicate": "vehicle", "value_a": "owns a vehicle", "value_b": "drives a pickup truck", "category": "entailment", "is_conflict": false},
+    {"entity": "elena", "predicate": "location", "value_a": "lives in California", "value_b": "lives in Los Angeles", "category": "entailment", "is_conflict": false},
+    {"entity": "farhan", "predicate": "diet", "value_a": "avoids red meat", "value_b": "does not eat beef", "category": "entailment", "is_conflict": false},
+    {"entity": "gina", "predicate": "job_title", "value_a": "works in healthcare", "value_b": "works as a hospital nurse", "category": "entailment", "is_conflict": false},
+    {"entity": "hassan", "predicate": "hobby", "value_a": "enjoys reading", "value_b": "just finished a mystery novel", "category": "entailment", "is_conflict": false},
+
+    {"entity": "alice", "predicate": "misc_note", "value_a": "mentioned liking jazz music", "value_b": "mentioned needing to renew her passport", "category": "unrelated_same_entity", "is_conflict": false},
+    {"entity": "bob", "predicate": "misc_note", "value_a": "asked about restaurant recommendations", "value_b": "asked about flight delay policies", "category": "unrelated_same_entity", "is_conflict": false},
+    {"entity": "carla", "predicate": "misc_note", "value_a": "talked about a work deadline", "value_b": "talked about a new puppy", "category": "unrelated_same_entity", "is_conflict": false},
+    {"entity": "dave", "predicate": "misc_note", "value_a": "brought up a hiking trip", "value_b": "brought up a dentist appointment", "category": "unrelated_same_entity", "is_conflict": false},
+    {"entity": "elena", "predicate": "misc_note", "value_a": "discussed a book club meeting", "value_b": "discussed a car insurance renewal", "category": "unrelated_same_entity", "is_conflict": false},
+    {"entity": "farhan", "predicate": "misc_note", "value_a": "mentioned a favorite movie", "value_b": "mentioned a plumbing issue at home", "category": "unrelated_same_entity", "is_conflict": false},
+    {"entity": "gina", "predicate": "misc_note", "value_a": "asked about gym membership options", "value_b": "asked about tax filing deadlines", "category": "unrelated_same_entity", "is_conflict": false},
+    {"entity": "hassan", "predicate": "misc_note", "value_a": "shared a recipe idea", "value_b": "shared a concern about a noisy neighbor", "category": "unrelated_same_entity", "is_conflict": false},
+
+    {"entity": "alice", "predicate": "seat_preference", "value_a": "prefers window seats", "value_b": "prefers window seats on long flights specifically", "category": "preference_refinement", "is_conflict": false},
+    {"entity": "bob", "predicate": "coffee_order", "value_a": "likes coffee", "value_b": "likes oat-milk lattes in the morning", "category": "preference_refinement", "is_conflict": false},
+    {"entity": "carla", "predicate": "workout_preference", "value_a": "enjoys running", "value_b": "enjoys running mainly on trails, not roads", "category": "preference_refinement", "is_conflict": false},
+    {"entity": "dave", "predicate": "music_preference", "value_a": "likes rock music", "value_b": "likes classic rock from the 70s specifically", "category": "preference_refinement", "is_conflict": false},
+    {"entity": "elena", "predicate": "hotel_preference", "value_a": "prefers quiet hotels", "value_b": "prefers quiet hotels away from elevators", "category": "preference_refinement", "is_conflict": false},
+    {"entity": "farhan", "predicate": "travel_style", "value_a": "likes budget travel", "value_b": "likes budget travel but will splurge on flights", "category": "preference_refinement", "is_conflict": false},
+    {"entity": "gina", "predicate": "reading_preference", "value_a": "enjoys mystery novels", "value_b": "enjoys mystery novels set in small towns", "category": "preference_refinement", "is_conflict": false},
+    {"entity": "hassan", "predicate": "food_preference", "value_a": "likes spicy food", "value_b": "likes spicy food but not overly hot dishes", "category": "preference_refinement", "is_conflict": false},
+
+    {"entity": "alice", "predicate": "vacation_style", "value_a": "wants to relax on vacation", "value_b": "wants an action-packed, activity-filled vacation", "category": "ambiguous_conflict", "is_conflict": true},
+    {"entity": "bob", "predicate": "work_style", "value_a": "prefers working independently", "value_b": "prefers close collaboration with a team", "category": "ambiguous_conflict", "is_conflict": true},
+    {"entity": "carla", "predicate": "social_style", "value_a": "wants a big group celebration", "value_b": "wants a small, quiet gathering", "category": "ambiguous_conflict", "is_conflict": true},
+    {"entity": "dave", "predicate": "budget_style", "value_a": "wants to spend freely on this trip", "value_b": "wants to stick to a tight budget", "category": "ambiguous_conflict", "is_conflict": true},
+    {"entity": "elena", "predicate": "risk_tolerance", "value_a": "wants an adventurous, risky itinerary", "value_b": "wants a safe, low-risk itinerary", "category": "ambiguous_conflict", "is_conflict": true},
+    {"entity": "farhan", "predicate": "pace_preference", "value_a": "wants a jam-packed schedule", "value_b": "wants lots of free unstructured time", "category": "ambiguous_conflict", "is_conflict": true},
+    {"entity": "gina", "predicate": "decor_style", "value_a": "wants a minimalist room", "value_b": "wants a room full of personal decorations", "category": "ambiguous_conflict", "is_conflict": true},
+    {"entity": "hassan", "predicate": "communication_style", "value_a": "prefers being contacted only by email", "value_b": "prefers being contacted by phone call", "category": "ambiguous_conflict", "is_conflict": true}
+  ]
+}

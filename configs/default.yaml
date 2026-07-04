@@ -1,0 +1,29 @@
+seed: 42
+
+llm:
+  backend: mock          # mock | anthropic | openai_compatible
+  model: mock-1
+  cache_dir: llm_cache
+  temperature: 0.0
+  max_tokens: 1024
+
+embedding:
+  model: sentence-transformers/all-MiniLM-L6-v2
+  # Calibrated in Phase 5 by sweeping threshold in 0.05 steps over the 60
+  # conflict pairs in the pilot set and taking the F1-maximizing value
+  # (plateaued at 0.80-0.90, F1=0.938). See ANALYSIS_PLAN.md.
+  conflict_threshold: 0.80
+
+nli:
+  model: cross-encoder/nli-deberta-v3-small
+  # Calibrated the same way; F1 peaked at 0.938 (matching embedding's ceiling)
+  # across contradiction thresholds 0.10-0.25, then declined. 0.20 chosen
+  # (mid-plateau) for robustness to distributional shift in Phase 6 rather
+  # than an edge value.
+  contradiction_threshold: 0.20
+
+store:
+  db_path: ":memory:"
+
+logging:
+  level: INFO

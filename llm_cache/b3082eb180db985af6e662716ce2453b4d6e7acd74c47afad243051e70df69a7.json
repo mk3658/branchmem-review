@@ -1,0 +1,48 @@
+{
+  "text": "{\"is_conflict\":true,\"reasoning\":\"The two facts assign different phone numbers to the same person (555-0164 vs 555-0187), which are incompatible values for the same predicate.\"}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 107,
+  "output_tokens": 46,
+  "raw": {
+    "id": "chatcmpl-DxX084yu3OpSdRY5AcluHSFiHS2bC",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"is_conflict\":true,\"reasoning\":\"The two facts assign different phone numbers to the same person (555-0164 vs 555-0187), which are incompatible values for the same predicate.\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783080580,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 46,
+      "prompt_tokens": 107,
+      "total_tokens": 153,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "You are judging whether two memory facts about the same entity and predicate genuinely conflict (state incompatible values) or not (e.g. one is a paraphrase, refinement, or otherwise-compatible elaboration of the other).\n\nFact A: dave | phone_number = \"555-0164\"\nFact B: dave | phone_number = \"555-0187\"\n\nRespond with strict JSON only, no other text: {\"is_conflict\": true or false, \"reasoning\": \"<one sentence>\"}\n",
+  "system": ""
+}

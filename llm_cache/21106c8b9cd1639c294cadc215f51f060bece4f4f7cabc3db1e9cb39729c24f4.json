@@ -1,0 +1,48 @@
+{
+  "text": "{\"is_conflict\":true,\"reasoning\":\"Both facts assign different, incompatible values to the same attribute (heidi's manager_name is either \\\"taylor reyes\\\" or \\\"morgan lee\\\").\"}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 106,
+  "output_tokens": 46,
+  "raw": {
+    "id": "chatcmpl-DxXK7SIABz60FNAzv9feFQ3D7sKs4",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"is_conflict\":true,\"reasoning\":\"Both facts assign different, incompatible values to the same attribute (heidi's manager_name is either \\\"taylor reyes\\\" or \\\"morgan lee\\\").\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783081819,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 46,
+      "prompt_tokens": 106,
+      "total_tokens": 152,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "You are judging whether two memory facts about the same entity and predicate genuinely conflict (state incompatible values) or not (e.g. one is a paraphrase, refinement, or otherwise-compatible elaboration of the other).\n\nFact A: heidi | manager_name = \"taylor reyes\"\nFact B: heidi | manager_name = \"morgan lee\"\n\nRespond with strict JSON only, no other text: {\"is_conflict\": true or false, \"reasoning\": \"<one sentence>\"}\n",
+  "system": ""
+}

@@ -1,0 +1,48 @@
+{
+  "text": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"bob\",\n      \"predicate\": \"team\",\n      \"resolution\": \"merged\",\n      \"value\": \"data; growth; mobile\",\n      \"justification\": \"Both branches changed the team from the ancestor value, and without timestamps or evidence of which is current, preserving all distinct updates is the safest reconciliation.\"\n    },\n    {\n      \"entity\": \"bob\",\n      \"predicate\": \"phone_number\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The phone number differs across branches with no principled way to determine which update is the correct current number versus a stale change.\"\n    },\n    {\n      \"entity\": \"bob\",\n      \"predicate\": \"hobby\",\n      \"resolution\": \"merged\",\n      \"value\": \"photography; chess; reading\",\n      \"justification\": \"Hobbies are plausibly additive, and both branches changed from the ancestor value without any indication that the earlier hobby should be removed.\"\n    }\n  ]\n}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 373,
+  "output_tokens": 220,
+  "raw": {
+    "id": "chatcmpl-DxWs9FBnF18lFMiRlg9TEwnn7XCb2",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"bob\",\n      \"predicate\": \"team\",\n      \"resolution\": \"merged\",\n      \"value\": \"data; growth; mobile\",\n      \"justification\": \"Both branches changed the team from the ancestor value, and without timestamps or evidence of which is current, preserving all distinct updates is the safest reconciliation.\"\n    },\n    {\n      \"entity\": \"bob\",\n      \"predicate\": \"phone_number\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The phone number differs across branches with no principled way to determine which update is the correct current number versus a stale change.\"\n    },\n    {\n      \"entity\": \"bob\",\n      \"predicate\": \"hobby\",\n      \"resolution\": \"merged\",\n      \"value\": \"photography; chess; reading\",\n      \"justification\": \"Hobbies are plausibly additive, and both branches changed from the ancestor value without any indication that the earlier hobby should be removed.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783080085,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 220,
+      "prompt_tokens": 373,
+      "total_tokens": 593,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "Common ancestor value for each key (null if the key didn't exist yet):\n{\n  \"bob|team\": \"growth\",\n  \"bob|phone_number\": \"555-0193\",\n  \"bob|hobby\": \"photography\"\n}\n\nBranch A's current value for each conflicting key:\n{\n  \"bob|team\": \"data\",\n  \"bob|phone_number\": \"555-0187\",\n  \"bob|hobby\": \"chess\"\n}\n\nBranch B's current value for each conflicting key:\n{\n  \"bob|team\": \"mobile\",\n  \"bob|phone_number\": \"555-0101\",\n  \"bob|hobby\": \"reading\"\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged from a common ancestor while disconnected from each other. For each conflicting (entity, predicate) key, you are given the common ancestor's value (if any) and each branch's current value. Resolve each conflict using the ancestor as context (e.g. to tell which branch's update is more likely a genuine correction vs. a stale duplicate), or explicitly flag it as unresolvable if there is no principled way to choose (e.g. both are equally plausible preference changes with no way to tell which is more recent or more correct)."
+}

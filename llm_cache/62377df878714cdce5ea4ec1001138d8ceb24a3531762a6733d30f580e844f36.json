@@ -1,0 +1,48 @@
+{
+  "text": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"commute_mode\",\n      \"resolution\": \"merged\",\n      \"value\": \"car\",\n      \"justification\": \"Both branches changed from the ancestor value 'train', but Branch A's 'car' is treated as the more likely correction while Branch B's 'scooter' is not supported by any additional context.\"\n    },\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"phone_number\",\n      \"resolution\": \"merged\",\n      \"value\": \"555-0101\",\n      \"justification\": \"The ancestor phone number '555-0164' was replaced in both branches, and Branch A's '555-0101' is selected as the more plausible update without any distinguishing evidence.\"\n    },\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"vacation_preference\",\n      \"resolution\": \"merged\",\n      \"value\": \"city\",\n      \"justification\": \"Both branches diverged from the ancestor 'camping', and Branch A's 'city' is chosen over Branch B's 'mountains' due to lack of any principled way to determine recency or correctness.\"\n    }\n  ]\n}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 396,
+  "output_tokens": 261,
+  "raw": {
+    "id": "chatcmpl-DxWsIPEKV4b5mo5FOQtu6P7xJRxE6",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"commute_mode\",\n      \"resolution\": \"merged\",\n      \"value\": \"car\",\n      \"justification\": \"Both branches changed from the ancestor value 'train', but Branch A's 'car' is treated as the more likely correction while Branch B's 'scooter' is not supported by any additional context.\"\n    },\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"phone_number\",\n      \"resolution\": \"merged\",\n      \"value\": \"555-0101\",\n      \"justification\": \"The ancestor phone number '555-0164' was replaced in both branches, and Branch A's '555-0101' is selected as the more plausible update without any distinguishing evidence.\"\n    },\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"vacation_preference\",\n      \"resolution\": \"merged\",\n      \"value\": \"city\",\n      \"justification\": \"Both branches diverged from the ancestor 'camping', and Branch A's 'city' is chosen over Branch B's 'mountains' due to lack of any principled way to determine recency or correctness.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783080094,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 261,
+      "prompt_tokens": 396,
+      "total_tokens": 657,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "Common ancestor value for each key (null if the key didn't exist yet):\n{\n  \"heidi|commute_mode\": \"train\",\n  \"heidi|phone_number\": \"555-0164\",\n  \"heidi|vacation_preference\": \"camping\"\n}\n\nBranch A's current value for each conflicting key:\n{\n  \"heidi|commute_mode\": \"car\",\n  \"heidi|phone_number\": \"555-0101\",\n  \"heidi|vacation_preference\": \"city\"\n}\n\nBranch B's current value for each conflicting key:\n{\n  \"heidi|commute_mode\": \"scooter\",\n  \"heidi|phone_number\": \"555-0142\",\n  \"heidi|vacation_preference\": \"mountains\"\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged from a common ancestor while disconnected from each other. For each conflicting (entity, predicate) key, you are given the common ancestor's value (if any) and each branch's current value. Resolve each conflict using the ancestor as context (e.g. to tell which branch's update is more likely a genuine correction vs. a stale duplicate), or explicitly flag it as unresolvable if there is no principled way to choose (e.g. both are equally plausible preference changes with no way to tell which is more recent or more correct)."
+}

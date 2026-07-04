@@ -1,0 +1,2438 @@
+{
+  "metadata": {
+    "seed": 2026,
+    "n_scenarios": 60,
+    "model": "gpt-5.4-nano",
+    "divergence_spans": [
+      4.0,
+      10.0,
+      20.0
+    ],
+    "n_conflict_pairs": 180
+  },
+  "per_scenario": [
+    {
+      "scenario_id": "synth_2026_0000",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0001",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0002",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0003",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0004",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 0.7142857142857143
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0005",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0006",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0007",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0008",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.8571428571428571,
+        "branch_discard_always_b": 0.2857142857142857,
+        "branch_discard_fewer_updates": 0.2857142857142857,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0009",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 0.7142857142857143
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0010",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0011",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0012",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.8571428571428571,
+        "branch_discard_always_b": 0.2857142857142857,
+        "branch_discard_fewer_updates": 0.2857142857142857,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0013",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 0.7142857142857143
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0014",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0015",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0016",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0017",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0018",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2026_0019",
+      "divergence_span": 4.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0000",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0001",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0002",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0003",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.8571428571428571,
+        "branch_discard_always_b": 0.2857142857142857,
+        "branch_discard_fewer_updates": 0.2857142857142857,
+        "three_way_llm": 0.7142857142857143
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0004",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0005",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0006",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0007",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0008",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0009",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0010",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0011",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0012",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.8571428571428571,
+        "branch_discard_always_b": 0.2857142857142857,
+        "branch_discard_fewer_updates": 0.2857142857142857,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0013",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0014",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.8571428571428571,
+        "branch_discard_always_b": 0.2857142857142857,
+        "branch_discard_fewer_updates": 0.2857142857142857,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0015",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0016",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.8571428571428571,
+        "branch_discard_always_b": 0.2857142857142857,
+        "branch_discard_fewer_updates": 0.2857142857142857,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0017",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0018",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2027_0019",
+      "divergence_span": 10.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0000",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.8571428571428571,
+        "branch_discard_always_b": 0.2857142857142857,
+        "branch_discard_fewer_updates": 0.2857142857142857,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0001",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0002",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 0.7142857142857143
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0003",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0004",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.8571428571428571,
+        "branch_discard_always_b": 0.2857142857142857,
+        "branch_discard_fewer_updates": 0.2857142857142857,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0005",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.8571428571428571,
+        "branch_discard_always_b": 0.2857142857142857,
+        "branch_discard_fewer_updates": 0.2857142857142857,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0006",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0007",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.8571428571428571,
+        "branch_discard_always_b": 0.2857142857142857,
+        "branch_discard_fewer_updates": 0.2857142857142857,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0008",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0009",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0010",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0011",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0012",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0013",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0014",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0015",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0016",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 0.8571428571428571
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0017",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8571428571428571,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0018",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.7142857142857143,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    },
+    {
+      "scenario_id": "synth_2028_0019",
+      "divergence_span": 20.0,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7142857142857143,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.5714285714285714,
+        "branch_discard_fewer_updates": 0.5714285714285714,
+        "three_way_llm": 1.0
+      },
+      "category_accuracy_by_strategy": {
+        "last_writer_wins": {
+          "orthogonal": 1.0,
+          "resolvable": 0.5,
+          "ambiguous": 0.0
+        },
+        "naive_concat": {
+          "orthogonal": 1.0,
+          "resolvable": 0.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_always_b": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "branch_discard_fewer_updates": {
+          "orthogonal": 0.5,
+          "resolvable": 1.0,
+          "ambiguous": 0.0
+        },
+        "three_way_llm": {
+          "orthogonal": 1.0,
+          "resolvable": 1.0,
+          "ambiguous": 1.0
+        }
+      },
+      "n_questions": 7,
+      "n_conflict_pairs": 3
+    }
+  ],
+  "detector_scores": {
+    "embedding_threshold": {
+      "precision": 1.0,
+      "recall": 0.9166666666666666,
+      "f1": 0.9565217391304348,
+      "mean_latency_s": 0.08730195760726929,
+      "n_pairs": 180
+    },
+    "nli": {
+      "precision": 1.0,
+      "recall": 0.8611111111111112,
+      "f1": 0.9253731343283582,
+      "mean_latency_s": 0.062337487273746064,
+      "n_pairs": 180
+    },
+    "llm_judge": {
+      "precision": 1.0,
+      "recall": 0.9722222222222222,
+      "f1": 0.9859154929577464,
+      "mean_latency_s": 1.0812736882103815,
+      "n_pairs": 180
+    }
+  }
+}

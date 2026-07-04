@@ -1,0 +1,22 @@
+{
+  "entities": ["alice", "bob", "carol", "dave", "erin", "frank", "grace", "heidi", "ivan", "judy"],
+  "objective_predicates": {
+    "location": ["boston", "chicago", "denver", "seattle", "austin", "miami", "portland", "atlanta"],
+    "job": ["engineer", "manager", "designer", "analyst", "teacher", "nurse", "chef", "accountant"],
+    "employer": ["acme corp", "globex", "initech", "umbrella corp", "stark industries", "wayne enterprises"],
+    "commute_mode": ["bike", "car", "train", "walk", "bus", "scooter"],
+    "diet": ["vegetarian", "vegan", "omnivore", "pescatarian", "keto"],
+    "phone_number": ["555-0101", "555-0142", "555-0187", "555-0193", "555-0164"],
+    "manager_name": ["jordan smith", "taylor reyes", "morgan lee", "casey park", "riley chen"],
+    "team": ["platform", "growth", "infra", "data", "security", "mobile"]
+  },
+  "subjective_predicates": {
+    "favorite_color": ["red", "blue", "green", "purple", "yellow", "orange"],
+    "hobby": ["chess", "painting", "running", "gardening", "reading", "photography"],
+    "mood": ["happy", "stressed", "relaxed", "excited", "tired"],
+    "opinion_of_new_policy": ["supportive", "skeptical", "neutral", "opposed"],
+    "preferred_meeting_time": ["morning", "afternoon", "evening"],
+    "vacation_preference": ["beach", "mountains", "city", "camping"]
+  },
+  "notes": "objective_predicates have a single knowable ground truth at any point in time (suited to resolvable_conflict divergences); subjective_predicates are preference-like and have no fact-of-the-matter answer independent of which branch is 'right' (suited to ambiguous_conflict divergences). This split is a scenario-authoring device, not a claim that real agent memory cleanly separates this way."
+}

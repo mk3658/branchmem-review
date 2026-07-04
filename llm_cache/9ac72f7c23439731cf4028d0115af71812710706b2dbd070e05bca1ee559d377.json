@@ -1,0 +1,48 @@
+{
+  "text": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"frank\",\n      \"predicate\": \"employer\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The two branches give different employers ('acme corp' vs 'globex') with no textual indication of which is correct or whether one is a correction.\"\n    },\n    {\n      \"entity\": \"frank\",\n      \"predicate\": \"opinion_of_new_policy\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The branches directly conflict on the stance ('opposed' vs 'supportive') and there is no basis in the values to determine which is more accurate.\"\n    },\n    {\n      \"entity\": \"frank\",\n      \"predicate\": \"team\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The team assignments ('platform' vs 'security') conflict and the raw values provide no clue that one supersedes the other.\"\n    }\n  ]\n}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 384,
+  "output_tokens": 228,
+  "raw": {
+    "id": "chatcmpl-Dxg5zMI4iJVdiftoLvb4tfdcYhmQ4",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"frank\",\n      \"predicate\": \"employer\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The two branches give different employers ('acme corp' vs 'globex') with no textual indication of which is correct or whether one is a correction.\"\n    },\n    {\n      \"entity\": \"frank\",\n      \"predicate\": \"opinion_of_new_policy\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The branches directly conflict on the stance ('opposed' vs 'supportive') and there is no basis in the values to determine which is more accurate.\"\n    },\n    {\n      \"entity\": \"frank\",\n      \"predicate\": \"team\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The team assignments ('platform' vs 'security') conflict and the raw values provide no clue that one supersedes the other.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783115539,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 228,
+      "prompt_tokens": 384,
+      "total_tokens": 612,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "Branch A's current value for each conflicting key:\n{\n  \"frank|employer\": \"acme corp\",\n  \"frank|opinion_of_new_policy\": \"opposed\",\n  \"frank|team\": \"platform\"\n}\n\nBranch B's current value for each conflicting key:\n{\n  \"frank|employer\": \"globex\",\n  \"frank|opinion_of_new_policy\": \"supportive\",\n  \"frank|team\": \"security\"\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged while disconnected from each other. You are NOT given the common ancestor's value for these keys, and you are NOT given any source, confidence, or timestamp metadata \u2014 only the bare (entity, predicate) key and each branch's raw current value. Decide, from the content of the two values alone, whether one is more likely correct than the other (e.g. one reads as a specific correction of the other, or as more precise/plausible phrasing of the same fact), whether they can be sensibly merged into one value, or whether nothing about the two raw values themselves gives you any real basis to prefer one over the other. If there is no such basis, explicitly flag it as unresolvable rather than guessing \u2014 do not invent a preference where the text gives you none."
+}

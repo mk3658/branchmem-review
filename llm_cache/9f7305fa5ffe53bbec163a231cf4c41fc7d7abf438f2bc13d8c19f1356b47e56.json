@@ -1,0 +1,48 @@
+{
+  "text": "{\"is_conflict\":false,\"reasoning\":\"Both facts describe Gina working in healthcare, with the second specifying her role as a hospital nurse, which is compatible rather than contradictory.\"}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 107,
+  "output_tokens": 40,
+  "raw": {
+    "id": "chatcmpl-Dxk6rqEqqKlWSqYL4eS4Ferpy01cB",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"is_conflict\":false,\"reasoning\":\"Both facts describe Gina working in healthcare, with the second specifying her role as a hospital nurse, which is compatible rather than contradictory.\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783130969,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 40,
+      "prompt_tokens": 107,
+      "total_tokens": 147,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "You are judging whether two memory facts about the same entity and predicate genuinely conflict (state incompatible values) or not (e.g. one is a paraphrase, refinement, or otherwise-compatible elaboration of the other).\n\nFact A: gina | job_title = \"works in healthcare\"\nFact B: gina | job_title = \"works as a hospital nurse\"\n\nRespond with strict JSON only, no other text: {\"is_conflict\": true or false, \"reasoning\": \"<one sentence>\"}\n",
+  "system": ""
+}

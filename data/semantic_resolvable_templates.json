@@ -1,0 +1,101 @@
+{
+  "note": "Templates for the semantic_resolvable conflict category (ANALYSIS_PLAN_ADDENDUM.md item A2): equal source, equal confidence, uninformative timestamp on both branches. Ground truth is recoverable only by checking which branch value is semantically compatible with the ancestor's stated constraint at the SAME (entity, predicate) key -- not from any structured metadata field. IMPORTANT: ancestor_predicate must equal predicate, since ThreeWayLLMMerge's prompt only includes the ancestor's value for the exact colliding key (see branchmem/merge/three_way_llm.py); a constraint stored under a different predicate is invisible to the model regardless of its reasoning ability (caught via a real diagnostic check on the first run of this experiment, PROGRESS.md).",
+  "templates": [
+    {
+      "predicate": "dinner_choice",
+      "ancestor_predicate": "dinner_choice",
+      "ancestor_value": "is vegetarian and avoids meat",
+      "branch_a_value": "wants chicken for dinner",
+      "branch_b_value": "wants tofu for dinner",
+      "correct_branch": "b"
+    },
+    {
+      "predicate": "sauce_choice",
+      "ancestor_predicate": "sauce_choice",
+      "ancestor_value": "has a peanut allergy and avoids peanut-based food",
+      "branch_a_value": "prefers peanut sauce",
+      "branch_b_value": "prefers sesame sauce",
+      "correct_branch": "b"
+    },
+    {
+      "predicate": "venue_choice",
+      "ancestor_predicate": "venue_choice",
+      "ancestor_value": "uses a wheelchair and requires ramp access, no stairs",
+      "branch_a_value": "venue has stairs only",
+      "branch_b_value": "venue has ramp access",
+      "correct_branch": "b"
+    },
+    {
+      "predicate": "hotel_choice",
+      "ancestor_predicate": "hotel_choice",
+      "ancestor_value": "wants a quiet hotel, away from nightlife noise",
+      "branch_a_value": "hotel is beside a nightclub",
+      "branch_b_value": "hotel is in a quiet residential area",
+      "correct_branch": "b"
+    },
+    {
+      "predicate": "pairing_choice",
+      "ancestor_predicate": "pairing_choice",
+      "ancestor_value": "cannot drink alcohol for health reasons",
+      "branch_a_value": "wants wine pairing",
+      "branch_b_value": "wants sparkling water pairing",
+      "correct_branch": "b"
+    },
+    {
+      "predicate": "seating_choice",
+      "ancestor_predicate": "seating_choice",
+      "ancestor_value": "does not tolerate cigarette smoke",
+      "branch_a_value": "seated in the smoking section",
+      "branch_b_value": "seated in the non-smoking section",
+      "correct_branch": "b"
+    },
+    {
+      "predicate": "room_choice",
+      "ancestor_predicate": "room_choice",
+      "ancestor_value": "gets cold easily and dislikes air conditioning",
+      "branch_a_value": "room has AC set to maximum",
+      "branch_b_value": "room has AC turned off",
+      "correct_branch": "b"
+    },
+    {
+      "predicate": "transport_choice",
+      "ancestor_predicate": "transport_choice",
+      "ancestor_value": "gets severe motion sickness on boats",
+      "branch_a_value": "itinerary includes a ferry crossing",
+      "branch_b_value": "itinerary uses the land bridge instead",
+      "correct_branch": "b"
+    },
+    {
+      "predicate": "gift_choice",
+      "ancestor_predicate": "gift_choice",
+      "ancestor_value": "does not own a pet",
+      "branch_a_value": "gift is a dog leash",
+      "branch_b_value": "gift is a scarf",
+      "correct_branch": "b"
+    },
+    {
+      "predicate": "meeting_time_choice",
+      "ancestor_predicate": "meeting_time_choice",
+      "ancestor_value": "is only available before noon local time",
+      "branch_a_value": "meeting scheduled for 3pm local time",
+      "branch_b_value": "meeting scheduled for 10am local time",
+      "correct_branch": "b"
+    },
+    {
+      "predicate": "childcare_choice",
+      "ancestor_predicate": "childcare_choice",
+      "ancestor_value": "is traveling with a toddler",
+      "branch_a_value": "booked an adults-only resort",
+      "branch_b_value": "booked a family-friendly resort",
+      "correct_branch": "b"
+    },
+    {
+      "predicate": "workout_choice",
+      "ancestor_predicate": "workout_choice",
+      "ancestor_value": "has a knee injury and avoids high-impact exercise",
+      "branch_a_value": "plan includes running",
+      "branch_b_value": "plan includes swimming",
+      "correct_branch": "b"
+    }
+  ]
+}

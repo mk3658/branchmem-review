@@ -1,0 +1,48 @@
+{
+  "text": "{\"is_conflict\":false,\"reasoning\":\"Both facts describe the same location, with 'SF' being a common abbreviation for San Francisco, so they are compatible rather than contradictory.\"}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 105,
+  "output_tokens": 41,
+  "raw": {
+    "id": "chatcmpl-Dxk6kk76SCqPV4ONVuxKlOEhU0sps",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"is_conflict\":false,\"reasoning\":\"Both facts describe the same location, with 'SF' being a common abbreviation for San Francisco, so they are compatible rather than contradictory.\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783130962,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 41,
+      "prompt_tokens": 105,
+      "total_tokens": 146,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "You are judging whether two memory facts about the same entity and predicate genuinely conflict (state incompatible values) or not (e.g. one is a paraphrase, refinement, or otherwise-compatible elaboration of the other).\n\nFact A: hassan | location = \"based in San Francisco\"\nFact B: hassan | location = \"lives in SF\"\n\nRespond with strict JSON only, no other text: {\"is_conflict\": true or false, \"reasoning\": \"<one sentence>\"}\n",
+  "system": ""
+}

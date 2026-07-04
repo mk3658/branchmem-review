@@ -1,0 +1,48 @@
+{
+  "text": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"alice\",\n      \"predicate\": \"mood\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both branches provide different plausible mood states (relaxed vs tired) with no ancestor or recency signal to determine which is correct.\"\n    },\n    {\n      \"entity\": \"alice\",\n      \"predicate\": \"manager_name\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The manager name differs across branches (taylor reyes vs morgan lee) and the ancestor value (jordan smith) provides no basis to choose which update is more likely correct.\"\n    },\n    {\n      \"entity\": \"alice\",\n      \"predicate\": \"employer\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Employer differs across branches (stark industries vs initech) and there is no principled way to infer which is the genuine correction versus a stale update.\"\n    }\n  ]\n}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 379,
+  "output_tokens": 230,
+  "raw": {
+    "id": "chatcmpl-DxWsC5qZQDeLh3AbpK5cc00qwktv4",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"alice\",\n      \"predicate\": \"mood\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both branches provide different plausible mood states (relaxed vs tired) with no ancestor or recency signal to determine which is correct.\"\n    },\n    {\n      \"entity\": \"alice\",\n      \"predicate\": \"manager_name\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The manager name differs across branches (taylor reyes vs morgan lee) and the ancestor value (jordan smith) provides no basis to choose which update is more likely correct.\"\n    },\n    {\n      \"entity\": \"alice\",\n      \"predicate\": \"employer\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Employer differs across branches (stark industries vs initech) and there is no principled way to infer which is the genuine correction versus a stale update.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783080088,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 230,
+      "prompt_tokens": 379,
+      "total_tokens": 609,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "Common ancestor value for each key (null if the key didn't exist yet):\n{\n  \"alice|mood\": \"stressed\",\n  \"alice|manager_name\": \"jordan smith\",\n  \"alice|employer\": \"wayne enterprises\"\n}\n\nBranch A's current value for each conflicting key:\n{\n  \"alice|mood\": \"relaxed\",\n  \"alice|manager_name\": \"taylor reyes\",\n  \"alice|employer\": \"stark industries\"\n}\n\nBranch B's current value for each conflicting key:\n{\n  \"alice|mood\": \"tired\",\n  \"alice|manager_name\": \"morgan lee\",\n  \"alice|employer\": \"initech\"\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged from a common ancestor while disconnected from each other. For each conflicting (entity, predicate) key, you are given the common ancestor's value (if any) and each branch's current value. Resolve each conflict using the ancestor as context (e.g. to tell which branch's update is more likely a genuine correction vs. a stale duplicate), or explicitly flag it as unresolvable if there is no principled way to choose (e.g. both are equally plausible preference changes with no way to tell which is more recent or more correct)."
+}

@@ -1,0 +1,48 @@
+{
+  "text": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"bob\",\n      \"predicate\": \"commute_mode\",\n      \"resolution\": \"merged\",\n      \"value\": \"walk\",\n      \"justification\": \"With no ancestor context, choose Branch A as the more specific/consistent preference value rather than switching to a different mode.\"\n    },\n    {\n      \"entity\": \"bob\",\n      \"predicate\": \"job\",\n      \"resolution\": \"merged\",\n      \"value\": \"analyst\",\n      \"justification\": \"Absent any common-ancestor signal, prefer Branch A's job title as the likely original/less disruptive update.\"\n    },\n    {\n      \"entity\": \"bob\",\n      \"predicate\": \"vacation_preference\",\n      \"resolution\": \"merged\",\n      \"value\": \"mountains\",\n      \"justification\": \"Since both branches propose different preferences and there is no ancestor to arbitrate, keep Branch A's value as the more stable choice.\"\n    }\n  ]\n}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 341,
+  "output_tokens": 206,
+  "raw": {
+    "id": "chatcmpl-DxWiz0Ct7l9fhx5D5JvmozdJ6sKNX",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"bob\",\n      \"predicate\": \"commute_mode\",\n      \"resolution\": \"merged\",\n      \"value\": \"walk\",\n      \"justification\": \"With no ancestor context, choose Branch A as the more specific/consistent preference value rather than switching to a different mode.\"\n    },\n    {\n      \"entity\": \"bob\",\n      \"predicate\": \"job\",\n      \"resolution\": \"merged\",\n      \"value\": \"analyst\",\n      \"justification\": \"Absent any common-ancestor signal, prefer Branch A's job title as the likely original/less disruptive update.\"\n    },\n    {\n      \"entity\": \"bob\",\n      \"predicate\": \"vacation_preference\",\n      \"resolution\": \"merged\",\n      \"value\": \"mountains\",\n      \"justification\": \"Since both branches propose different preferences and there is no ancestor to arbitrate, keep Branch A's value as the more stable choice.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783079517,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 206,
+      "prompt_tokens": 341,
+      "total_tokens": 547,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "Common ancestor value for each key (null if the key didn't exist yet):\n{}\n\nBranch A's current value for each conflicting key:\n{\n  \"bob|commute_mode\": \"walk\",\n  \"bob|job\": \"analyst\",\n  \"bob|vacation_preference\": \"mountains\"\n}\n\nBranch B's current value for each conflicting key:\n{\n  \"bob|commute_mode\": \"bus\",\n  \"bob|job\": \"manager\",\n  \"bob|vacation_preference\": \"beach\"\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged from a common ancestor while disconnected from each other. For each conflicting (entity, predicate) key, you are given the common ancestor's value (if any) and each branch's current value. Resolve each conflict using the ancestor as context (e.g. to tell which branch's update is more likely a genuine correction vs. a stale duplicate), or explicitly flag it as unresolvable if there is no principled way to choose (e.g. both are equally plausible preference changes with no way to tell which is more recent or more correct)."
+}

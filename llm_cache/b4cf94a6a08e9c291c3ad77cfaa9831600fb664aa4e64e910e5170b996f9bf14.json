@@ -1,0 +1,48 @@
+{
+  "text": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"Stephen Crane\",\n      \"predicate\": \"famous_for\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"The Red Badge of Courage\",\n      \"justification\": \"The ancestor value is a well-known work by Stephen Crane, while both branch A and B propose unrelated items.\"\n    },\n    {\n      \"entity\": \"United States of America\",\n      \"predicate\": \"gov_head\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"Donald Trump\",\n      \"justification\": \"The ancestor value is the only plausible government head among the options, whereas both branches give unrelated names.\"\n    },\n    {\n      \"entity\": \"J-pop\",\n      \"predicate\": \"created_in_country\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"Japan\",\n      \"justification\": \"The ancestor correctly identifies J-pop as originating in Japan, while both branches contradict it.\"\n    },\n    {\n      \"entity\": \"Shingon Buddhism\",\n      \"predicate\": \"founded_by\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"K\u016bkai\",\n      \"justification\": \"The ancestor attributes Shingon Buddhism to K\u016bkai, while both branches list unrelated historical figures.\"\n    },\n    {\n      \"entity\": \"Satya Nadella\",\n      \"predicate\": \"born_in_city\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"Hyderabad\",\n      \"justification\": \"The ancestor value matches the commonly reported birthplace city, while both branches provide different cities.\"\n    },\n    {\n      \"entity\": \"Mahidol Adulyadej\",\n      \"predicate\": \"born_in_city\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"Bangkok\",\n      \"justification\": \"The ancestor value is consistent with the known birthplace city, while both branches propose different locations.\"\n    },\n    {\n      \"entity\": \"Martin O'Neill\",\n      \"predicate\": \"sport\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"association football\",\n      \"justification\": \"The ancestor correctly reflects O'Neill's sport as association football, while both branches give incorrect sports.\"\n    }\n  ]\n}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 1059,
+  "output_tokens": 474,
+  "raw": {
+    "id": "chatcmpl-DxXygiN0DwHcqzisBqvIT17DmP4pT",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"Stephen Crane\",\n      \"predicate\": \"famous_for\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"The Red Badge of Courage\",\n      \"justification\": \"The ancestor value is a well-known work by Stephen Crane, while both branch A and B propose unrelated items.\"\n    },\n    {\n      \"entity\": \"United States of America\",\n      \"predicate\": \"gov_head\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"Donald Trump\",\n      \"justification\": \"The ancestor value is the only plausible government head among the options, whereas both branches give unrelated names.\"\n    },\n    {\n      \"entity\": \"J-pop\",\n      \"predicate\": \"created_in_country\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"Japan\",\n      \"justification\": \"The ancestor correctly identifies J-pop as originating in Japan, while both branches contradict it.\"\n    },\n    {\n      \"entity\": \"Shingon Buddhism\",\n      \"predicate\": \"founded_by\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"K\u016bkai\",\n      \"justification\": \"The ancestor attributes Shingon Buddhism to K\u016bkai, while both branches list unrelated historical figures.\"\n    },\n    {\n      \"entity\": \"Satya Nadella\",\n      \"predicate\": \"born_in_city\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"Hyderabad\",\n      \"justification\": \"The ancestor value matches the commonly reported birthplace city, while both branches provide different cities.\"\n    },\n    {\n      \"entity\": \"Mahidol Adulyadej\",\n      \"predicate\": \"born_in_city\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"Bangkok\",\n      \"justification\": \"The ancestor value is consistent with the known birthplace city, while both branches propose different locations.\"\n    },\n    {\n      \"entity\": \"Martin O'Neill\",\n      \"predicate\": \"sport\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"association football\",\n      \"justification\": \"The ancestor correctly reflects O'Neill's sport as association football, while both branches give incorrect sports.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783084334,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 474,
+      "prompt_tokens": 1059,
+      "total_tokens": 1533,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "Common ancestor value for each key (null if the key didn't exist yet):\n{\n  \"Stephen Crane|famous_for\": \"The Red Badge of Courage\",\n  \"United States of America|gov_head\": \"Donald Trump\",\n  \"J-pop|created_in_country\": \"Japan\",\n  \"Shingon Buddhism|founded_by\": \"K\\u016bkai\",\n  \"Satya Nadella|born_in_city\": \"Hyderabad\",\n  \"Mahidol Adulyadej|born_in_city\": \"Bangkok\",\n  \"Martin O'Neill|sport\": \"association football\"\n}\n\nBranch A's current value/source/confidence for each conflicting key:\n{\n  \"Stephen Crane|famous_for\": {\n    \"value\": \"The Fairly OddParents\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"United States of America|gov_head\": {\n    \"value\": \"Ole Johan Vierdal\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"J-pop|created_in_country\": {\n    \"value\": \"Finland\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Shingon Buddhism|founded_by\": {\n    \"value\": \"Joseph Smith\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Satya Nadella|born_in_city\": {\n    \"value\": \"Constantinople\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Mahidol Adulyadej|born_in_city\": {\n    \"value\": \"Salisbury\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Martin O'Neill|sport\": {\n    \"value\": \"cricket\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  }\n}\n\nBranch B's current value/source/confidence for each conflicting key:\n{\n  \"Stephen Crane|famous_for\": {\n    \"value\": \"Charlie Hebdo\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"United States of America|gov_head\": {\n    \"value\": \"Lili Bosse\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"J-pop|created_in_country\": {\n    \"value\": \"United States of America\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Shingon Buddhism|founded_by\": {\n    \"value\": \"William Waynflete\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Satya Nadella|born_in_city\": {\n    \"value\": \"London\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Mahidol Adulyadej|born_in_city\": {\n    \"value\": \"Leeds\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Martin O'Neill|sport\": {\n    \"value\": \"Muay Thai\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  }\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged from a common ancestor while disconnected from each other. For each conflicting (entity, predicate) key, you are given the common ancestor's value (if any) and each branch's current value, source, and confidence. 'source' is how that update was recorded: \"user\" means the user explicitly stated or corrected it; \"inference\" means the agent inferred or guessed it; \"observation\" means the agent observed it indirectly. Resolve each conflict using whatever signal actually distinguishes the two updates \u2014 e.g. a user-sourced, higher-confidence update is ordinarily more trustworthy than an inferred, lower-confidence one; the ancestor value can indicate which branch's update is more likely a genuine correction vs. a stale duplicate. Do NOT use timestamps to decide, even if you can infer relative recency \u2014 two branches that were disconnected from each other have no shared clock, so 'later' does not mean 'more correct' here. If source, confidence, and ancestor context give no real basis to prefer one branch over the other (e.g. both are equally plausible, equally-sourced preference changes), explicitly flag it as unresolvable rather than guessing."
+}

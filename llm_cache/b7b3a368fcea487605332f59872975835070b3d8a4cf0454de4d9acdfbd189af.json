@@ -1,0 +1,48 @@
+{
+  "text": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"judy\",\n      \"predicate\": \"preferred_meeting_time\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The ancestor was 'afternoon' and both branches changed it to different times ('evening' vs 'morning') with no principled way to determine which update is more recent or correct.\"\n    },\n    {\n      \"entity\": \"judy\",\n      \"predicate\": \"job\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The ancestor was 'teacher' and branches changed it to different jobs ('nurse' vs 'chef') without any evidence to prefer one over the other.\"\n    },\n    {\n      \"entity\": \"judy\",\n      \"predicate\": \"location\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The ancestor was 'denver' and branches changed it to different locations ('miami' vs 'austin') with no basis to choose which is the correct update.\"\n    }\n  ]\n}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 381,
+  "output_tokens": 243,
+  "raw": {
+    "id": "chatcmpl-DxWsYkCCWea7F7uqNdqMmdgSHLXJL",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"judy\",\n      \"predicate\": \"preferred_meeting_time\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The ancestor was 'afternoon' and both branches changed it to different times ('evening' vs 'morning') with no principled way to determine which update is more recent or correct.\"\n    },\n    {\n      \"entity\": \"judy\",\n      \"predicate\": \"job\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The ancestor was 'teacher' and branches changed it to different jobs ('nurse' vs 'chef') without any evidence to prefer one over the other.\"\n    },\n    {\n      \"entity\": \"judy\",\n      \"predicate\": \"location\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The ancestor was 'denver' and branches changed it to different locations ('miami' vs 'austin') with no basis to choose which is the correct update.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783080110,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 243,
+      "prompt_tokens": 381,
+      "total_tokens": 624,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "Common ancestor value for each key (null if the key didn't exist yet):\n{\n  \"judy|preferred_meeting_time\": \"afternoon\",\n  \"judy|job\": \"teacher\",\n  \"judy|location\": \"denver\"\n}\n\nBranch A's current value for each conflicting key:\n{\n  \"judy|preferred_meeting_time\": \"evening\",\n  \"judy|job\": \"nurse\",\n  \"judy|location\": \"miami\"\n}\n\nBranch B's current value for each conflicting key:\n{\n  \"judy|preferred_meeting_time\": \"morning\",\n  \"judy|job\": \"chef\",\n  \"judy|location\": \"austin\"\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged from a common ancestor while disconnected from each other. For each conflicting (entity, predicate) key, you are given the common ancestor's value (if any) and each branch's current value. Resolve each conflict using the ancestor as context (e.g. to tell which branch's update is more likely a genuine correction vs. a stale duplicate), or explicitly flag it as unresolvable if there is no principled way to choose (e.g. both are equally plausible preference changes with no way to tell which is more recent or more correct)."
+}

@@ -1,0 +1,48 @@
+{
+  "text": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"Bo Ryan\",\n      \"predicate\": \"sport\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both branches provide equally confident observation-based sports values that conflict with each other and the ancestor value, with no distinguishing signal to prefer either.\"\n    },\n    {\n      \"entity\": \"AP1000\",\n      \"predicate\": \"produced_by\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Branch A and B both claim equally confident observation-based producers that differ from each other and the ancestor, and neither source type or confidence provides a basis to choose.\"\n    },\n    {\n      \"entity\": \"cornerback\",\n      \"predicate\": \"sport\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The two branches disagree with equal confidence and both are observation-sourced, so there is no reliable basis to reconcile.\"\n    },\n    {\n      \"entity\": \"Charlie Hebdo\",\n      \"predicate\": \"created_in_country\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Branch A and B offer equally confident observation-based countries that conflict with each other and the ancestor, with no additional signal to resolve.\"\n    },\n    {\n      \"entity\": \"Sketches by Boz\",\n      \"predicate\": \"author_of\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both branches assert different authors with identical observation confidence, and the ancestor already specifies a different author, leaving no basis to prefer either.\"\n    },\n    {\n      \"entity\": \"Born in the U.S.A.\",\n      \"predicate\": \"performed_by\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Branch A and B both provide equally confident observation-based performers that conflict with each other and the ancestor, so the conflict is unresolvable from the provided signals.\"\n    }\n  ]\n}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 942,
+  "output_tokens": 440,
+  "raw": {
+    "id": "chatcmpl-DxXycrG5xjw9mhcUUx8OuM6pEP4bt",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"Bo Ryan\",\n      \"predicate\": \"sport\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both branches provide equally confident observation-based sports values that conflict with each other and the ancestor value, with no distinguishing signal to prefer either.\"\n    },\n    {\n      \"entity\": \"AP1000\",\n      \"predicate\": \"produced_by\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Branch A and B both claim equally confident observation-based producers that differ from each other and the ancestor, and neither source type or confidence provides a basis to choose.\"\n    },\n    {\n      \"entity\": \"cornerback\",\n      \"predicate\": \"sport\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The two branches disagree with equal confidence and both are observation-sourced, so there is no reliable basis to reconcile.\"\n    },\n    {\n      \"entity\": \"Charlie Hebdo\",\n      \"predicate\": \"created_in_country\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Branch A and B offer equally confident observation-based countries that conflict with each other and the ancestor, with no additional signal to resolve.\"\n    },\n    {\n      \"entity\": \"Sketches by Boz\",\n      \"predicate\": \"author_of\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both branches assert different authors with identical observation confidence, and the ancestor already specifies a different author, leaving no basis to prefer either.\"\n    },\n    {\n      \"entity\": \"Born in the U.S.A.\",\n      \"predicate\": \"performed_by\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Branch A and B both provide equally confident observation-based performers that conflict with each other and the ancestor, so the conflict is unresolvable from the provided signals.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783084330,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 440,
+      "prompt_tokens": 942,
+      "total_tokens": 1382,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "Common ancestor value for each key (null if the key didn't exist yet):\n{\n  \"Bo Ryan|sport\": \"basketball\",\n  \"AP1000|produced_by\": \"Westinghouse Electric\",\n  \"cornerback|sport\": \"American football\",\n  \"Charlie Hebdo|created_in_country\": \"France\",\n  \"Sketches by Boz|author_of\": \"Charles Dickens\",\n  \"Born in the U.S.A.|performed_by\": \"Bruce Springsteen\"\n}\n\nBranch A's current value/source/confidence for each conflicting key:\n{\n  \"Bo Ryan|sport\": {\n    \"value\": \"ice hockey\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"AP1000|produced_by\": {\n    \"value\": \"Canadair\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"cornerback|sport\": {\n    \"value\": \"field hockey\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Charlie Hebdo|created_in_country\": {\n    \"value\": \"Italy\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Sketches by Boz|author_of\": {\n    \"value\": \"Sigmund Freud\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Born in the U.S.A.|performed_by\": {\n    \"value\": \"Dana International\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  }\n}\n\nBranch B's current value/source/confidence for each conflicting key:\n{\n  \"Bo Ryan|sport\": {\n    \"value\": \"association football\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"AP1000|produced_by\": {\n    \"value\": \"Ilyushin\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"cornerback|sport\": {\n    \"value\": \"association football\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Charlie Hebdo|created_in_country\": {\n    \"value\": \"Australia\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Sketches by Boz|author_of\": {\n    \"value\": \"Daphne du Maurier\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  },\n  \"Born in the U.S.A.|performed_by\": {\n    \"value\": \"Amy Winehouse\",\n    \"source\": \"observation\",\n    \"confidence\": 1.0\n  }\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged from a common ancestor while disconnected from each other. For each conflicting (entity, predicate) key, you are given the common ancestor's value (if any) and each branch's current value, source, and confidence. 'source' is how that update was recorded: \"user\" means the user explicitly stated or corrected it; \"inference\" means the agent inferred or guessed it; \"observation\" means the agent observed it indirectly. Resolve each conflict using whatever signal actually distinguishes the two updates \u2014 e.g. a user-sourced, higher-confidence update is ordinarily more trustworthy than an inferred, lower-confidence one; the ancestor value can indicate which branch's update is more likely a genuine correction vs. a stale duplicate. Do NOT use timestamps to decide, even if you can infer relative recency \u2014 two branches that were disconnected from each other have no shared clock, so 'later' does not mean 'more correct' here. If source, confidence, and ancestor context give no real basis to prefer one branch over the other (e.g. both are equally plausible, equally-sourced preference changes), explicitly flag it as unresolvable rather than guessing."
+}

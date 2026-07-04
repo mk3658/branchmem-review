@@ -1,0 +1,48 @@
+{
+  "text": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"location\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"With no common-ancestor context and no recency information, it's unclear whether Atlanta or Miami is the correct current location.\"\n    },\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"diet\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both pescatarian and vegan are plausible diet states, and without an ancestor value or timestamps there is no principled way to choose.\"\n    },\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"opinion_of_new_policy\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Supportive vs. opposed cannot be reconciled without knowing which update is newer or which is more reliable.\"\n    }\n  ]\n}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 350,
+  "output_tokens": 212,
+  "raw": {
+    "id": "chatcmpl-DxWit1ExENgicEuG161ukZdEU5sP6",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"location\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"With no common-ancestor context and no recency information, it's unclear whether Atlanta or Miami is the correct current location.\"\n    },\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"diet\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both pescatarian and vegan are plausible diet states, and without an ancestor value or timestamps there is no principled way to choose.\"\n    },\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"opinion_of_new_policy\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Supportive vs. opposed cannot be reconciled without knowing which update is newer or which is more reliable.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783079511,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 212,
+      "prompt_tokens": 350,
+      "total_tokens": 562,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "Common ancestor value for each key (null if the key didn't exist yet):\n{}\n\nBranch A's current value for each conflicting key:\n{\n  \"heidi|location\": \"atlanta\",\n  \"heidi|diet\": \"pescatarian\",\n  \"heidi|opinion_of_new_policy\": \"supportive\"\n}\n\nBranch B's current value for each conflicting key:\n{\n  \"heidi|location\": \"miami\",\n  \"heidi|diet\": \"vegan\",\n  \"heidi|opinion_of_new_policy\": \"opposed\"\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged from a common ancestor while disconnected from each other. For each conflicting (entity, predicate) key, you are given the common ancestor's value (if any) and each branch's current value. Resolve each conflict using the ancestor as context (e.g. to tell which branch's update is more likely a genuine correction vs. a stale duplicate), or explicitly flag it as unresolvable if there is no principled way to choose (e.g. both are equally plausible preference changes with no way to tell which is more recent or more correct)."
+}

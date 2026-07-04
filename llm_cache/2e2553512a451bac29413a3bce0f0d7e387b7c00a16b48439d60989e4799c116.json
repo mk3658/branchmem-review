@@ -1,0 +1,48 @@
+{
+  "text": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"hobby\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both branches provide different hobbies (reading vs gardening) from observation with equal confidence and neither matches the ancestor value (running), so there is no reliable basis to prefer one.\"\n    },\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"phone_number\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"555-0193\",\n      \"justification\": \"Branch A\u2019s phone number is user-sourced with higher confidence (0.95) while Branch B\u2019s is inference-sourced with lower confidence (0.55).\"\n    },\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"location\",\n      \"resolution\": \"kept_from_b\",\n      \"value\": \"austin\",\n      \"justification\": \"Branch B\u2019s location is user-sourced with high confidence (0.95) while Branch A\u2019s is inference-sourced with lower confidence (0.55).\"\n    }\n  ]\n}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 644,
+  "output_tokens": 245,
+  "raw": {
+    "id": "chatcmpl-DxWzGVf9k9Di7qZ1iOP69ozBG4aIM",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"hobby\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both branches provide different hobbies (reading vs gardening) from observation with equal confidence and neither matches the ancestor value (running), so there is no reliable basis to prefer one.\"\n    },\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"phone_number\",\n      \"resolution\": \"kept_from_a\",\n      \"value\": \"555-0193\",\n      \"justification\": \"Branch A\u2019s phone number is user-sourced with higher confidence (0.95) while Branch B\u2019s is inference-sourced with lower confidence (0.55).\"\n    },\n    {\n      \"entity\": \"heidi\",\n      \"predicate\": \"location\",\n      \"resolution\": \"kept_from_b\",\n      \"value\": \"austin\",\n      \"justification\": \"Branch B\u2019s location is user-sourced with high confidence (0.95) while Branch A\u2019s is inference-sourced with lower confidence (0.55).\"\n    }\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783080526,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 245,
+      "prompt_tokens": 644,
+      "total_tokens": 889,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "Common ancestor value for each key (null if the key didn't exist yet):\n{\n  \"heidi|hobby\": \"running\",\n  \"heidi|phone_number\": \"555-0187\"\n}\n\nBranch A's current value/source/confidence for each conflicting key:\n{\n  \"heidi|hobby\": {\n    \"value\": \"reading\",\n    \"source\": \"observation\",\n    \"confidence\": 0.7\n  },\n  \"heidi|phone_number\": {\n    \"value\": \"555-0193\",\n    \"source\": \"user\",\n    \"confidence\": 0.95\n  },\n  \"heidi|location\": {\n    \"value\": \"denver\",\n    \"source\": \"inference\",\n    \"confidence\": 0.55\n  }\n}\n\nBranch B's current value/source/confidence for each conflicting key:\n{\n  \"heidi|hobby\": {\n    \"value\": \"gardening\",\n    \"source\": \"observation\",\n    \"confidence\": 0.7\n  },\n  \"heidi|phone_number\": {\n    \"value\": \"555-0101\",\n    \"source\": \"inference\",\n    \"confidence\": 0.55\n  },\n  \"heidi|location\": {\n    \"value\": \"austin\",\n    \"source\": \"user\",\n    \"confidence\": 0.95\n  }\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged from a common ancestor while disconnected from each other. For each conflicting (entity, predicate) key, you are given the common ancestor's value (if any) and each branch's current value, source, and confidence. 'source' is how that update was recorded: \"user\" means the user explicitly stated or corrected it; \"inference\" means the agent inferred or guessed it; \"observation\" means the agent observed it indirectly. Resolve each conflict using whatever signal actually distinguishes the two updates \u2014 e.g. a user-sourced, higher-confidence update is ordinarily more trustworthy than an inferred, lower-confidence one; the ancestor value can indicate which branch's update is more likely a genuine correction vs. a stale duplicate. Do NOT use timestamps to decide, even if you can infer relative recency \u2014 two branches that were disconnected from each other have no shared clock, so 'later' does not mean 'more correct' here. If source, confidence, and ancestor context give no real basis to prefer one branch over the other (e.g. both are equally plausible, equally-sourced preference changes), explicitly flag it as unresolvable rather than guessing."
+}

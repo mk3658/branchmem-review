@@ -1,0 +1,200 @@
+{
+  "model": "gpt-5.4-mini",
+  "n_scenarios": 20,
+  "divergence_span": 4.0,
+  "seed": 2026,
+  "per_scenario": [
+    {
+      "scenario_id": "synth_2026_0000",
+      "accuracy": 0.8571428571428571,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.5,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0001",
+      "accuracy": 0.8571428571428571,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.5,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0002",
+      "accuracy": 1.0,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 1.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0003",
+      "accuracy": 1.0,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 1.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0004",
+      "accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0005",
+      "accuracy": 1.0,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 1.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0006",
+      "accuracy": 1.0,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 1.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0007",
+      "accuracy": 1.0,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 1.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0008",
+      "accuracy": 1.0,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 1.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0009",
+      "accuracy": 0.8571428571428571,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.5,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0010",
+      "accuracy": 1.0,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 1.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0011",
+      "accuracy": 1.0,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 1.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0012",
+      "accuracy": 1.0,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 1.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0013",
+      "accuracy": 0.7142857142857143,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0014",
+      "accuracy": 1.0,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 1.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0015",
+      "accuracy": 1.0,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 1.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0016",
+      "accuracy": 0.8571428571428571,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 1.0,
+        "ambiguous": 0.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0017",
+      "accuracy": 1.0,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 1.0,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0018",
+      "accuracy": 0.8571428571428571,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.5,
+        "ambiguous": 1.0
+      }
+    },
+    {
+      "scenario_id": "synth_2026_0019",
+      "accuracy": 0.8571428571428571,
+      "category_accuracy": {
+        "orthogonal": 1.0,
+        "resolvable": 0.5,
+        "ambiguous": 1.0
+      }
+    }
+  ],
+  "mean_accuracy": 0.9285714285714286,
+  "comparison_baseline_model": "gpt-5.4-nano",
+  "comparison_baseline_mean_accuracy_same_scenarios": 0.9142857142857143,
+  "paired_comparison_vs_nano": {
+    "mean_diff": 0.014285714285714285,
+    "sd_diff": 0.063887656499994,
+    "ci_low": -0.01428571428571429,
+    "ci_high": 0.04285714285714286,
+    "wilcoxon_statistic": 3.0,
+    "p_value": 0.4496917979688909,
+    "note": "exploratory robustness check, not part of the preregistered ANALYSIS_PLAN.md confirmatory tests; run post-hoc after Phase 6 in response to peer review, disclosed as such"
+  }
+}

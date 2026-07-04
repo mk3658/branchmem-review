@@ -1,0 +1,56 @@
+{
+  "note": "post-hoc, exploratory abstention-aware metrics; NOT part of ANALYSIS_PLAN.md's confirmatory tests (see ANALYSIS_PLAN_ADDENDUM.md, item A1). Synthetic side recomputed via branchmem.eval.abstention_metrics on the identical locked seed=2026 scenarios (cache-backed, zero new API spend). MAB side derived from the existing abstention_adjusted_metric.json aggregate counts (also cache-backed).",
+  "utility_cost_regimes": {
+    "correct_commit": 1.0,
+    "abstention": -1.0,
+    "cost_-2": -2.0,
+    "cost_-5": -5.0,
+    "cost_-10": -10.0
+  },
+  "synthetic_resolvable_and_ambiguous": {
+    "n_questions": 180,
+    "n_committed": 121,
+    "n_correct_committed": 101,
+    "n_wrong_committed": 20,
+    "n_flagged": 59,
+    "n_ambiguous_total": 60,
+    "n_ambiguous_flagged": 57,
+    "n_resolvable_or_orthog_flagged": 2,
+    "commit_rate": 0.6722222222222223,
+    "abstention_rate": 0.3277777777777778,
+    "conditional_on_commit_accuracy": 0.8347107438016529,
+    "wrong_commit_rate": 0.1111111111111111,
+    "flag_precision": 0.9661016949152542,
+    "flag_recall": 0.95,
+    "expected_utility": {
+      "cost_-2": 0.011111111111111112,
+      "cost_-5": -0.32222222222222224,
+      "cost_-10": -0.8777777777777778
+    },
+    "coverage": 0.6722222222222223,
+    "risk": 0.1652892561983471
+  },
+  "mab_expanded": {
+    "n_questions": 230,
+    "n_committed": 0,
+    "n_correct_committed": 0,
+    "n_wrong_committed": 0,
+    "n_flagged": 230,
+    "n_ambiguous_total": 0,
+    "n_ambiguous_flagged": 0,
+    "n_resolvable_or_orthog_flagged": 0,
+    "commit_rate": 0.0,
+    "abstention_rate": 1.0,
+    "conditional_on_commit_accuracy": null,
+    "wrong_commit_rate": 0.0,
+    "flag_precision": null,
+    "flag_recall": null,
+    "expected_utility": {
+      "cost_-2": -1.0,
+      "cost_-5": -1.0,
+      "cost_-10": -1.0
+    },
+    "coverage": 0.0,
+    "risk": null
+  }
+}

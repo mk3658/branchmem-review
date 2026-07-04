@@ -1,0 +1,48 @@
+{
+  "text": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"erin\",\n      \"predicate\": \"commute_mode\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The two branches assert different commute modes ('scooter' vs 'car') with no textual indication of which is a correction or more current.\"\n    },\n    {\n      \"entity\": \"erin\",\n      \"predicate\": \"hobby\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The hobbies differ ('reading' vs 'photography') and nothing in the values suggests one supersedes the other.\"\n    },\n    {\n      \"entity\": \"erin\",\n      \"predicate\": \"team\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The team assignments differ ('data' vs 'infra') and there is no basis in the raw values to determine which is correct.\"\n    }\n  ]\n}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 372,
+  "output_tokens": 214,
+  "raw": {
+    "id": "chatcmpl-DxgKKcP4P6Vf2X1HSkqTWCgWHBaH3",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"erin\",\n      \"predicate\": \"commute_mode\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The two branches assert different commute modes ('scooter' vs 'car') with no textual indication of which is a correction or more current.\"\n    },\n    {\n      \"entity\": \"erin\",\n      \"predicate\": \"hobby\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The hobbies differ ('reading' vs 'photography') and nothing in the values suggests one supersedes the other.\"\n    },\n    {\n      \"entity\": \"erin\",\n      \"predicate\": \"team\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The team assignments differ ('data' vs 'infra') and there is no basis in the raw values to determine which is correct.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783116428,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 214,
+      "prompt_tokens": 372,
+      "total_tokens": 586,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "Branch A's current value for each conflicting key:\n{\n  \"erin|commute_mode\": \"scooter\",\n  \"erin|hobby\": \"reading\",\n  \"erin|team\": \"data\"\n}\n\nBranch B's current value for each conflicting key:\n{\n  \"erin|commute_mode\": \"car\",\n  \"erin|hobby\": \"photography\",\n  \"erin|team\": \"infra\"\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged while disconnected from each other. You are NOT given the common ancestor's value for these keys, and you are NOT given any source, confidence, or timestamp metadata \u2014 only the bare (entity, predicate) key and each branch's raw current value. Decide, from the content of the two values alone, whether one is more likely correct than the other (e.g. one reads as a specific correction of the other, or as more precise/plausible phrasing of the same fact), whether they can be sensibly merged into one value, or whether nothing about the two raw values themselves gives you any real basis to prefer one over the other. If there is no such basis, explicitly flag it as unresolvable rather than guessing \u2014 do not invent a preference where the text gives you none."
+}

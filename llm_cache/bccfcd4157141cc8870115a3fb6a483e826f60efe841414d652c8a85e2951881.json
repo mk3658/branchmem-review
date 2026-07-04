@@ -1,0 +1,48 @@
+{
+  "text": "{\"is_conflict\":true,\"reasoning\":\"\u201cLives in California\u201d and \u201clives in Los Angeles\u201d are incompatible because Los Angeles is a specific city within California, so the two location values cannot both be true as stated.\"}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 106,
+  "output_tokens": 51,
+  "raw": {
+    "id": "chatcmpl-Dxk6p06ko75ItroYimUZK5fQlg1KC",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"is_conflict\":true,\"reasoning\":\"\u201cLives in California\u201d and \u201clives in Los Angeles\u201d are incompatible because Los Angeles is a specific city within California, so the two location values cannot both be true as stated.\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783130967,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 51,
+      "prompt_tokens": 106,
+      "total_tokens": 157,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "You are judging whether two memory facts about the same entity and predicate genuinely conflict (state incompatible values) or not (e.g. one is a paraphrase, refinement, or otherwise-compatible elaboration of the other).\n\nFact A: elena | location = \"lives in California\"\nFact B: elena | location = \"lives in Los Angeles\"\n\nRespond with strict JSON only, no other text: {\"is_conflict\": true or false, \"reasoning\": \"<one sentence>\"}\n",
+  "system": ""
+}

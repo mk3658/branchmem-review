@@ -1,0 +1,76 @@
+{
+  "note": "post-hoc, exploratory balanced conflict-detector benchmark; NOT part of ANALYSIS_PLAN.md's confirmatory tests (see ANALYSIS_PLAN_ADDENDUM.md item A3). Does not change or retract RQ2's locked result -- a harder, separate, descriptive follow-up.",
+  "n_pairs": 48,
+  "n_conflict": 16,
+  "n_non_conflict": 32,
+  "categories": [
+    "ambiguous_conflict",
+    "contradiction",
+    "entailment",
+    "paraphrase",
+    "preference_refinement",
+    "unrelated_same_entity"
+  ],
+  "detectors": {
+    "embedding_threshold": {
+      "tp": 16,
+      "fp": 26,
+      "fn": 0,
+      "tn": 6,
+      "precision": 0.38095238095238093,
+      "recall": 1.0,
+      "f1": 0.5517241379310345,
+      "specificity": 0.1875,
+      "false_positive_rate": 0.8125,
+      "auroc": 0.462890625,
+      "per_category_accuracy": {
+        "contradiction": 1.0,
+        "paraphrase": 0.125,
+        "entailment": 0.125,
+        "unrelated_same_entity": 0.0,
+        "preference_refinement": 0.5,
+        "ambiguous_conflict": 1.0
+      }
+    },
+    "nli": {
+      "tp": 16,
+      "fp": 8,
+      "fn": 0,
+      "tn": 24,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1": 0.8,
+      "specificity": 0.75,
+      "false_positive_rate": 0.25,
+      "auroc": 0.87109375,
+      "per_category_accuracy": {
+        "contradiction": 1.0,
+        "paraphrase": 1.0,
+        "entailment": 1.0,
+        "unrelated_same_entity": 0.0,
+        "preference_refinement": 1.0,
+        "ambiguous_conflict": 1.0
+      }
+    },
+    "llm_judge": {
+      "tp": 13,
+      "fp": 5,
+      "fn": 3,
+      "tn": 27,
+      "precision": 0.7222222222222222,
+      "recall": 0.8125,
+      "f1": 0.7647058823529411,
+      "specificity": 0.84375,
+      "false_positive_rate": 0.15625,
+      "auroc": 0.828125,
+      "per_category_accuracy": {
+        "contradiction": 0.875,
+        "paraphrase": 1.0,
+        "entailment": 0.875,
+        "unrelated_same_entity": 0.5,
+        "preference_refinement": 1.0,
+        "ambiguous_conflict": 0.75
+      }
+    }
+  }
+}

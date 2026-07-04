@@ -1,0 +1,19 @@
+{
+  "synthetic_resolvable": {
+    "n_questions": 120,
+    "n_committed": 119,
+    "n_correct_when_committed": 102,
+    "n_flagged": 1,
+    "conditional_on_commit_accuracy": 0.8571428571428571,
+    "abstention_rate": 0.008333333333333333
+  },
+  "mab_expanded": {
+    "n_questions": 230,
+    "n_committed": 0,
+    "n_correct_when_committed": 0,
+    "n_flagged": 230,
+    "conditional_on_commit_accuracy": null,
+    "abstention_rate": 1.0
+  },
+  "note": "exploratory metric added post-hoc in response to peer review; separates calibrated abstention from genuine commit-time error. NOT part of ANALYSIS_PLAN.md confirmatory tests. Computed entirely from cached model calls, no new API spend."
+}

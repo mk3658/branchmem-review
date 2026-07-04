@@ -1,0 +1,407 @@
+{
+  "seed": 12345,
+  "n_sampled": 50,
+  "n_total_parsed_triples_population": 51314,
+  "sampled_triples": [
+    {
+      "row": 1,
+      "line_index": 788,
+      "entity": "Denis Thatcher",
+      "predicate": "religion",
+      "value": "Anglicanism",
+      "raw_line": "787. Denis Thatcher is affiliated with the religion of Anglicanism."
+    },
+    {
+      "row": 7,
+      "line_index": 11282,
+      "entity": "Dartmouth College",
+      "predicate": "founded_by",
+      "value": "Eleazar Wheelock",
+      "raw_line": "11281. Dartmouth College was founded by Eleazar Wheelock."
+    },
+    {
+      "row": 1,
+      "line_index": 2250,
+      "entity": "Italy",
+      "predicate": "gov_head",
+      "value": "Lili Bosse",
+      "raw_line": "2249. The name of the current head of the Italy government is Lili Bosse."
+    },
+    {
+      "row": 0,
+      "line_index": 357,
+      "entity": "AP1000",
+      "predicate": "produced_by",
+      "value": "Canadair",
+      "raw_line": "356. The company that produced AP1000 is Canadair."
+    },
+    {
+      "row": 7,
+      "line_index": 6717,
+      "entity": "Don Moye",
+      "predicate": "music_type",
+      "value": "jazz",
+      "raw_line": "6716. The type of music that Don Moye plays is jazz."
+    },
+    {
+      "row": 3,
+      "line_index": 14806,
+      "entity": "Southern Baptist Theological Seminary",
+      "predicate": "religion",
+      "value": "Southern Baptist Convention",
+      "raw_line": "14805. Southern Baptist Theological Seminary is affiliated with the religion of Southern Baptist Convention."
+    },
+    {
+      "row": 5,
+      "line_index": 1134,
+      "entity": "Denmark",
+      "predicate": "capital_of",
+      "value": "Copenhagen",
+      "raw_line": "1133. The capital of Denmark is Copenhagen."
+    },
+    {
+      "row": 3,
+      "line_index": 9549,
+      "entity": "Vladimir Nabokov",
+      "predicate": "child_is",
+      "value": "Dmitri Nabokov",
+      "raw_line": "9548. Vladimir Nabokov's child is Dmitri Nabokov."
+    },
+    {
+      "row": 3,
+      "line_index": 873,
+      "entity": "Frontier Developments",
+      "predicate": "ceo_of",
+      "value": "David Braben",
+      "raw_line": "872. The chief executive officer of Frontier Developments is David Braben."
+    },
+    {
+      "row": 5,
+      "line_index": 1352,
+      "entity": "Dublin",
+      "predicate": "continent",
+      "value": "Europe",
+      "raw_line": "1351. Dublin is located in the continent of Europe."
+    },
+    {
+      "row": 3,
+      "line_index": 16555,
+      "entity": "Blackstar",
+      "predicate": "performed_by",
+      "value": "Lou Reed",
+      "raw_line": "16554. Blackstar was performed by Lou Reed."
+    },
+    {
+      "row": 1,
+      "line_index": 1229,
+      "entity": "J. A. Happ",
+      "predicate": "plays_position",
+      "value": "point guard",
+      "raw_line": "1228. J. A. Happ plays the position of point guard."
+    },
+    {
+      "row": 7,
+      "line_index": 1949,
+      "entity": "Ari Vatanen",
+      "predicate": "speaks_language",
+      "value": "Finnish",
+      "raw_line": "1948. Ari Vatanen speaks the language of Finnish."
+    },
+    {
+      "row": 5,
+      "line_index": 698,
+      "entity": "Panelefsiniakos F.C.",
+      "predicate": "sport",
+      "value": "association football",
+      "raw_line": "697. Panelefsiniakos F.C. is associated with the sport of association football."
+    },
+    {
+      "row": 3,
+      "line_index": 3902,
+      "entity": "Luciano Spalletti",
+      "predicate": "plays_position",
+      "value": "midfielder",
+      "raw_line": "3901. Luciano Spalletti plays the position of midfielder."
+    },
+    {
+      "row": 6,
+      "line_index": 1732,
+      "entity": "Louis XV of France",
+      "predicate": "religion",
+      "value": "Catholic Church",
+      "raw_line": "1731. Louis XV of France is affiliated with the religion of Catholic Church."
+    },
+    {
+      "row": 5,
+      "line_index": 346,
+      "entity": "The Indianapolis Star",
+      "predicate": "created_in_country",
+      "value": "United States of America",
+      "raw_line": "345. The Indianapolis Star was created in the country of United States of America."
+    },
+    {
+      "row": 7,
+      "line_index": 6472,
+      "entity": "Cyprian",
+      "predicate": "religion",
+      "value": "Catholic Church",
+      "raw_line": "6471. Cyprian is affiliated with the religion of Catholic Church."
+    },
+    {
+      "row": 2,
+      "line_index": 608,
+      "entity": "Wilhelm II",
+      "predicate": "educated_at",
+      "value": "University of Bonn",
+      "raw_line": "607. The univeristy where Wilhelm II was educated is University of Bonn."
+    },
+    {
+      "row": 6,
+      "line_index": 279,
+      "entity": "Ford Falcon (North America)",
+      "predicate": "produced_by",
+      "value": "Ford Motor Company",
+      "raw_line": "278. The company that produced Ford Falcon (North America) is Ford Motor Company."
+    },
+    {
+      "row": 7,
+      "line_index": 16158,
+      "entity": "United Kingdom of Great Britain and Ireland",
+      "predicate": "official_language",
+      "value": "Hungarian",
+      "raw_line": "16157. The official language of United Kingdom of Great Britain and Ireland is Hungarian."
+    },
+    {
+      "row": 7,
+      "line_index": 212,
+      "entity": "Green Eggs and Ham",
+      "predicate": "author_of",
+      "value": "Dr. Seuss",
+      "raw_line": "211. The author of Green Eggs and Ham is Dr. Seuss."
+    },
+    {
+      "row": 3,
+      "line_index": 7735,
+      "entity": "Tunku Abdul Rahman",
+      "predicate": "citizen_of",
+      "value": "United Kingdom",
+      "raw_line": "7734. Tunku Abdul Rahman is a citizen of United Kingdom."
+    },
+    {
+      "row": 7,
+      "line_index": 10650,
+      "entity": "Malta",
+      "predicate": "office_role_of_Prime Minister",
+      "value": "Pietro Parolin",
+      "raw_line": "10649. The Prime Minister of Malta is Pietro Parolin."
+    },
+    {
+      "row": 6,
+      "line_index": 3046,
+      "entity": "Scooter Braun",
+      "predicate": "born_in_city",
+      "value": "Beacon",
+      "raw_line": "3045. Scooter Braun was born in the city of Beacon."
+    },
+    {
+      "row": 7,
+      "line_index": 13136,
+      "entity": "Zhiyi",
+      "predicate": "citizen_of",
+      "value": "United States of America",
+      "raw_line": "13135. Zhiyi is a citizen of United States of America."
+    },
+    {
+      "row": 7,
+      "line_index": 14137,
+      "entity": "Maus",
+      "predicate": "author_of",
+      "value": "Laura Ingalls Wilder",
+      "raw_line": "14136. The author of Maus is Laura Ingalls Wilder."
+    },
+    {
+      "row": 3,
+      "line_index": 9789,
+      "entity": "Zinedine Zidane",
+      "predicate": "plays_position",
+      "value": "linebacker",
+      "raw_line": "9788. Zinedine Zidane plays the position of linebacker."
+    },
+    {
+      "row": 1,
+      "line_index": 1979,
+      "entity": "Satyajit Ray",
+      "predicate": "child_is",
+      "value": "Tupac Shakur",
+      "raw_line": "1978. Satyajit Ray's child is Tupac Shakur."
+    },
+    {
+      "row": 3,
+      "line_index": 8674,
+      "entity": "Humboldt University of Berlin",
+      "predicate": "founded_by",
+      "value": "Howard Hughes",
+      "raw_line": "8673. Humboldt University of Berlin was founded by Howard Hughes."
+    },
+    {
+      "row": 1,
+      "line_index": 310,
+      "entity": "Mike D'Antoni",
+      "predicate": "plays_position",
+      "value": "point guard",
+      "raw_line": "309. Mike D'Antoni plays the position of point guard."
+    },
+    {
+      "row": 3,
+      "line_index": 14048,
+      "entity": "Kevin Williamson",
+      "predicate": "citizen_of",
+      "value": "United Kingdom of Great Britain and Ireland",
+      "raw_line": "14047. Kevin Williamson is a citizen of United Kingdom of Great Britain and Ireland."
+    },
+    {
+      "row": 3,
+      "line_index": 4057,
+      "entity": "Phillip Burton",
+      "predicate": "died_in_city",
+      "value": "San Francisco",
+      "raw_line": "4056. Phillip Burton died in the city of San Francisco."
+    },
+    {
+      "row": 7,
+      "line_index": 15230,
+      "entity": "Summa contra Gentiles",
+      "predicate": "author_of",
+      "value": "Rabanus Maurus",
+      "raw_line": "15229. The author of Summa contra Gentiles is Rabanus Maurus."
+    },
+    {
+      "row": 3,
+      "line_index": 6142,
+      "entity": "Pierre Nkurunziza",
+      "predicate": "educated_at",
+      "value": "University of Burundi",
+      "raw_line": "6141. The univeristy where Pierre Nkurunziza was educated is University of Burundi."
+    },
+    {
+      "row": 7,
+      "line_index": 573,
+      "entity": "Brent Celek",
+      "predicate": "plays_position",
+      "value": "tight end",
+      "raw_line": "572. Brent Celek plays the position of tight end."
+    },
+    {
+      "row": 3,
+      "line_index": 16136,
+      "entity": "jazz",
+      "predicate": "created_in_country",
+      "value": "Romania",
+      "raw_line": "16135. jazz was created in the country of Romania."
+    },
+    {
+      "row": 3,
+      "line_index": 10923,
+      "entity": "Kotka",
+      "predicate": "official_language",
+      "value": "Finnish",
+      "raw_line": "10922. The official language of Kotka is Finnish."
+    },
+    {
+      "row": 2,
+      "line_index": 295,
+      "entity": "Cardinal Stritch University",
+      "predicate": "religion",
+      "value": "Methodism",
+      "raw_line": "294. Cardinal Stritch University is affiliated with the religion of Methodism."
+    },
+    {
+      "row": 3,
+      "line_index": 3446,
+      "entity": "Jeff Berlin",
+      "predicate": "music_type",
+      "value": "post-punk",
+      "raw_line": "3445. The type of music that Jeff Berlin plays is post-punk."
+    },
+    {
+      "row": 7,
+      "line_index": 14323,
+      "entity": "Robert Baer",
+      "predicate": "employed_by",
+      "value": "National Aeronautics and Space Administration",
+      "raw_line": "14322. Robert Baer is employed by National Aeronautics and Space Administration."
+    },
+    {
+      "row": 2,
+      "line_index": 4426,
+      "entity": "Gazeta Wyborcza",
+      "predicate": "hq_city",
+      "value": "Ann Arbor",
+      "raw_line": "4425. The headquarters of Gazeta Wyborcza is located in the city of Ann Arbor."
+    },
+    {
+      "row": 2,
+      "line_index": 2377,
+      "entity": "Lu\u00eds de Cam\u00f5es",
+      "predicate": "educated_at",
+      "value": "University of Coimbra",
+      "raw_line": "2376. The univeristy where Lu\u00eds de Cam\u00f5es was educated is University of Coimbra."
+    },
+    {
+      "row": 7,
+      "line_index": 1538,
+      "entity": "George David Weiss",
+      "predicate": "citizen_of",
+      "value": "United States of America",
+      "raw_line": "1537. George David Weiss is a citizen of United States of America."
+    },
+    {
+      "row": 4,
+      "line_index": 204,
+      "entity": "Ernst Heinkel",
+      "predicate": "citizen_of",
+      "value": "Tang Empire",
+      "raw_line": "203. Ernst Heinkel is a citizen of Tang Empire."
+    },
+    {
+      "row": 7,
+      "line_index": 14423,
+      "entity": "Angel",
+      "predicate": "original_broadcaster",
+      "value": "Taiwan Television",
+      "raw_line": "14422. The origianl broadcaster of Angel is Taiwan Television."
+    },
+    {
+      "row": 3,
+      "line_index": 11544,
+      "entity": "Donny Hathaway",
+      "predicate": "music_type",
+      "value": "jazz",
+      "raw_line": "11543. The type of music that Donny Hathaway plays is jazz."
+    },
+    {
+      "row": 7,
+      "line_index": 11423,
+      "entity": "Shlomo Goren",
+      "predicate": "citizen_of",
+      "value": "Russian Empire",
+      "raw_line": "11422. Shlomo Goren is a citizen of Russian Empire."
+    },
+    {
+      "row": 3,
+      "line_index": 10791,
+      "entity": "A Moveable Feast",
+      "predicate": "author_of",
+      "value": "Samuel Beckett",
+      "raw_line": "10790. The author of A Moveable Feast is Samuel Beckett."
+    },
+    {
+      "row": 3,
+      "line_index": 10090,
+      "entity": "Cuiab\u00e1 Esporte Clube",
+      "predicate": "sport",
+      "value": "basketball",
+      "raw_line": "10089. Cuiab\u00e1 Esporte Clube is associated with the sport of basketball."
+    }
+  ]
+}

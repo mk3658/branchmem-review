@@ -1,0 +1,48 @@
+{
+  "text": "{\"is_conflict\": false, \"reasoning\":\"Both statements describe Gina\u2019s sleep pattern as being oriented toward late morning/afternoon (night owl sleeping until noon), so they are compatible rather than mutually exclusive.\"}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 111,
+  "output_tokens": 47,
+  "raw": {
+    "id": "chatcmpl-Dxk6aGIzLip916zFnfU6hsOJRvGqg",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"is_conflict\": false, \"reasoning\":\"Both statements describe Gina\u2019s sleep pattern as being oriented toward late morning/afternoon (night owl sleeping until noon), so they are compatible rather than mutually exclusive.\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783130952,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 47,
+      "prompt_tokens": 111,
+      "total_tokens": 158,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "You are judging whether two memory facts about the same entity and predicate genuinely conflict (state incompatible values) or not (e.g. one is a paraphrase, refinement, or otherwise-compatible elaboration of the other).\n\nFact A: gina | sleep_schedule = \"is a morning person\"\nFact B: gina | sleep_schedule = \"is a night owl who sleeps until noon\"\n\nRespond with strict JSON only, no other text: {\"is_conflict\": true or false, \"reasoning\": \"<one sentence>\"}\n",
+  "system": ""
+}

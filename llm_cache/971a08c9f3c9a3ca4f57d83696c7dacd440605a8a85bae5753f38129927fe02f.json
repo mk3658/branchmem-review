@@ -1,0 +1,48 @@
+{
+  "text": "{\"is_conflict\":true,\"reasoning\":\"\u201cIs vegetarian\u201d is incompatible with \u201ceats meat every day,\u201d since vegetarian diets exclude eating meat daily.\"}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 104,
+  "output_tokens": 36,
+  "raw": {
+    "id": "chatcmpl-Dxk6X29MBZ57sheYdiNdmFVV2gcxX",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"is_conflict\":true,\"reasoning\":\"\u201cIs vegetarian\u201d is incompatible with \u201ceats meat every day,\u201d since vegetarian diets exclude eating meat daily.\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783130949,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 36,
+      "prompt_tokens": 104,
+      "total_tokens": 140,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "You are judging whether two memory facts about the same entity and predicate genuinely conflict (state incompatible values) or not (e.g. one is a paraphrase, refinement, or otherwise-compatible elaboration of the other).\n\nFact A: carla | diet = \"is vegetarian\"\nFact B: carla | diet = \"eats meat every day\"\n\nRespond with strict JSON only, no other text: {\"is_conflict\": true or false, \"reasoning\": \"<one sentence>\"}\n",
+  "system": ""
+}

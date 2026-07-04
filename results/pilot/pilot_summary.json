@@ -1,0 +1,151 @@
+{
+  "seed": 2026,
+  "n_scenarios": 20,
+  "model": "gpt-5.4-nano",
+  "mean_accuracy_by_strategy": {
+    "last_writer_wins": 0.6,
+    "naive_concat": 0.57,
+    "branch_discard_always_b": 0.43,
+    "branch_discard_fewer_updates": 0.43,
+    "three_way_llm": 0.9
+  },
+  "sd_accuracy_by_strategy": {
+    "last_writer_wins": 0.14509525002200235,
+    "naive_concat": 0.1341640786499874,
+    "branch_discard_always_b": 0.13416407864998736,
+    "branch_discard_fewer_updates": 0.13416407864998736,
+    "three_way_llm": 0.15217718205053643
+  },
+  "mean_accuracy_by_strategy_and_category": {
+    "last_writer_wins": {
+      "orthogonal": 1.0,
+      "resolvable": 0.5,
+      "ambiguous": 0.0
+    },
+    "naive_concat": {
+      "orthogonal": 1.0,
+      "resolvable": 0.425,
+      "ambiguous": 0.0
+    },
+    "branch_discard_always_b": {
+      "orthogonal": 0.5,
+      "resolvable": 0.575,
+      "ambiguous": 0.0
+    },
+    "branch_discard_fewer_updates": {
+      "orthogonal": 0.5,
+      "resolvable": 0.575,
+      "ambiguous": 0.0
+    },
+    "three_way_llm": {
+      "orthogonal": 1.0,
+      "resolvable": 0.825,
+      "ambiguous": 0.85
+    }
+  },
+  "pairwise_accuracy_diffs": {
+    "last_writer_wins_vs_naive_concat": {
+      "mean_diff": 0.030000000000000006,
+      "sd_diff": 0.19761738683361688
+    },
+    "last_writer_wins_vs_branch_discard_always_b": {
+      "mean_diff": 0.17,
+      "sd_diff": 0.19761738683361688
+    },
+    "last_writer_wins_vs_branch_discard_fewer_updates": {
+      "mean_diff": 0.17,
+      "sd_diff": 0.19761738683361688
+    },
+    "last_writer_wins_vs_three_way_llm": {
+      "mean_diff": -0.3,
+      "sd_diff": 0.18918106058538345
+    },
+    "naive_concat_vs_branch_discard_always_b": {
+      "mean_diff": 0.14,
+      "sd_diff": 0.2683281572999748
+    },
+    "naive_concat_vs_branch_discard_fewer_updates": {
+      "mean_diff": 0.14,
+      "sd_diff": 0.2683281572999748
+    },
+    "naive_concat_vs_three_way_llm": {
+      "mean_diff": -0.33,
+      "sd_diff": 0.19761738683361688
+    },
+    "branch_discard_always_b_vs_branch_discard_fewer_updates": {
+      "mean_diff": 0.0,
+      "sd_diff": 0.0
+    },
+    "branch_discard_always_b_vs_three_way_llm": {
+      "mean_diff": -0.47000000000000003,
+      "sd_diff": 0.20799797569865155
+    },
+    "branch_discard_fewer_updates_vs_three_way_llm": {
+      "mean_diff": -0.47000000000000003,
+      "sd_diff": 0.20799797569865155
+    }
+  },
+  "detector_scores": {
+    "embedding_threshold": {
+      "precision": 1.0,
+      "recall": 0.7666666666666667,
+      "f1": 0.8679245283018869,
+      "mean_latency_s": 0.20792823632558186,
+      "n_pairs": 60
+    },
+    "nli": {
+      "precision": 1.0,
+      "recall": 0.8666666666666667,
+      "f1": 0.9285714285714286,
+      "mean_latency_s": 0.13416777849197387,
+      "n_pairs": 60
+    },
+    "llm_judge": {
+      "precision": 1.0,
+      "recall": 0.9333333333333333,
+      "f1": 0.9655172413793104,
+      "mean_latency_s": 0.5527820666631063,
+      "n_pairs": 60
+    }
+  },
+  "three_way_llm_merge_variance": {
+    "per_scenario_accuracy_across_3_repeats": {
+      "synth_2026_0000": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "synth_2026_0001": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "synth_2026_0002": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "synth_2026_0003": [
+        0.8,
+        1.0,
+        1.0
+      ],
+      "synth_2026_0004": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "note": "each list is 3 independent (use_cache=False) merge runs' downstream accuracy on the same scenario"
+  },
+  "llm_judge_detector_flip_rate": {
+    "n_pairs_tested": 10,
+    "n_pairs_with_disagreement_across_3_repeats": 0
+  },
+  "token_usage_and_cost": {
+    "n_cached_llm_calls_total": 249,
+    "total_input_tokens": 57090,
+    "total_output_tokens": 25026,
+    "note": "Dollar cost intentionally omitted -- verify against current published OpenAI pricing for the exact model rather than trusting a hardcoded rate."
+  }
+}

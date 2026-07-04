@@ -1,0 +1,112 @@
+{
+  "source": "mab_extension",
+  "model": "gpt-5.4-nano",
+  "max_conflict_keys": 15,
+  "n_rows": 8,
+  "per_row": [
+    {
+      "row": 0,
+      "n_questions": 11,
+      "n_conflict_pairs": 11,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.7272727272727273,
+        "naive_concat": 0.5454545454545454,
+        "branch_discard_always_b": 0.45454545454545453,
+        "branch_discard_fewer_updates": 0.45454545454545453,
+        "three_way_llm": 0.0
+      }
+    },
+    {
+      "row": 1,
+      "n_questions": 9,
+      "n_conflict_pairs": 9,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.6666666666666666,
+        "naive_concat": 0.5555555555555556,
+        "branch_discard_always_b": 0.4444444444444444,
+        "branch_discard_fewer_updates": 0.4444444444444444,
+        "three_way_llm": 0.4444444444444444
+      }
+    },
+    {
+      "row": 2,
+      "n_questions": 8,
+      "n_conflict_pairs": 8,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.625,
+        "naive_concat": 0.75,
+        "branch_discard_always_b": 0.25,
+        "branch_discard_fewer_updates": 0.25,
+        "three_way_llm": 0.0
+      }
+    },
+    {
+      "row": 3,
+      "n_questions": 5,
+      "n_conflict_pairs": 5,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.8,
+        "naive_concat": 0.6,
+        "branch_discard_always_b": 0.4,
+        "branch_discard_fewer_updates": 0.4,
+        "three_way_llm": 0.0
+      }
+    },
+    {
+      "row": 4,
+      "n_questions": 6,
+      "n_conflict_pairs": 6,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5,
+        "naive_concat": 0.16666666666666666,
+        "branch_discard_always_b": 0.8333333333333334,
+        "branch_discard_fewer_updates": 0.8333333333333334,
+        "three_way_llm": 0.0
+      }
+    },
+    {
+      "row": 5,
+      "n_questions": 7,
+      "n_conflict_pairs": 7,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.5714285714285714,
+        "naive_concat": 0.5714285714285714,
+        "branch_discard_always_b": 0.42857142857142855,
+        "branch_discard_fewer_updates": 0.42857142857142855,
+        "three_way_llm": 0.0
+      }
+    },
+    {
+      "row": 6,
+      "n_questions": 8,
+      "n_conflict_pairs": 8,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.375,
+        "naive_concat": 0.5,
+        "branch_discard_always_b": 0.5,
+        "branch_discard_fewer_updates": 0.5,
+        "three_way_llm": 0.0
+      }
+    },
+    {
+      "row": 7,
+      "n_questions": 13,
+      "n_conflict_pairs": 13,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.46153846153846156,
+        "naive_concat": 0.5384615384615384,
+        "branch_discard_always_b": 0.46153846153846156,
+        "branch_discard_fewer_updates": 0.46153846153846156,
+        "three_way_llm": 0.0
+      }
+    }
+  ],
+  "mean_accuracy_by_strategy": {
+    "last_writer_wins": 0.5908633033633034,
+    "naive_concat": 0.5284458596958597,
+    "branch_discard_always_b": 0.47155414030414033,
+    "branch_discard_fewer_updates": 0.47155414030414033,
+    "three_way_llm": 0.05555555555555555
+  },
+  "note": "exploratory secondary analysis on real MemoryAgentBench data, run post-hoc after the Phase 6 locked run in response to peer review; NOT part of the preregistered ANALYSIS_PLAN.md confirmatory tests. No ambiguous-category conflicts exist in this data (MAB Fact Consolidation is deterministic by construction)."
+}

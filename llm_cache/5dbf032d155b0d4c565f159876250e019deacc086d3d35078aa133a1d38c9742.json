@@ -1,0 +1,48 @@
+{
+  "text": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"erin\",\n      \"predicate\": \"favorite_color\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The two branches disagree on the color (red vs orange) with no internal cues to determine which is more accurate.\"\n    },\n    {\n      \"entity\": \"erin\",\n      \"predicate\": \"manager_name\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The manager names differ (taylor reyes vs morgan lee) and the values alone provide no basis to prefer one.\"\n    },\n    {\n      \"entity\": \"erin\",\n      \"predicate\": \"team\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The team assignments conflict (mobile vs growth) and there is no textual evidence to reconcile or choose.\"\n    }\n  ]\n}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 372,
+  "output_tokens": 203,
+  "raw": {
+    "id": "chatcmpl-Dxg5XvkDgDpolkMm6bzI9qtngTY2m",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"resolutions\": [\n    {\n      \"entity\": \"erin\",\n      \"predicate\": \"favorite_color\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The two branches disagree on the color (red vs orange) with no internal cues to determine which is more accurate.\"\n    },\n    {\n      \"entity\": \"erin\",\n      \"predicate\": \"manager_name\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The manager names differ (taylor reyes vs morgan lee) and the values alone provide no basis to prefer one.\"\n    },\n    {\n      \"entity\": \"erin\",\n      \"predicate\": \"team\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"The team assignments conflict (mobile vs growth) and there is no textual evidence to reconcile or choose.\"\n    }\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783115511,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 203,
+      "prompt_tokens": 372,
+      "total_tokens": 575,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "Branch A's current value for each conflicting key:\n{\n  \"erin|favorite_color\": \"red\",\n  \"erin|manager_name\": \"taylor reyes\",\n  \"erin|team\": \"mobile\"\n}\n\nBranch B's current value for each conflicting key:\n{\n  \"erin|favorite_color\": \"orange\",\n  \"erin|manager_name\": \"morgan lee\",\n  \"erin|team\": \"growth\"\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged while disconnected from each other. You are NOT given the common ancestor's value for these keys, and you are NOT given any source, confidence, or timestamp metadata \u2014 only the bare (entity, predicate) key and each branch's raw current value. Decide, from the content of the two values alone, whether one is more likely correct than the other (e.g. one reads as a specific correction of the other, or as more precise/plausible phrasing of the same fact), whether they can be sensibly merged into one value, or whether nothing about the two raw values themselves gives you any real basis to prefer one over the other. If there is no such basis, explicitly flag it as unresolvable rather than guessing \u2014 do not invent a preference where the text gives you none."
+}

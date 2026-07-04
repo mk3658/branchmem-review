@@ -1,0 +1,48 @@
+{
+  "text": "{\"is_conflict\":true,\"reasoning\":\"The two facts assign incompatible budget preferences: spending freely versus sticking to a tight budget.\"}",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "input_tokens": 115,
+  "output_tokens": 31,
+  "raw": {
+    "id": "chatcmpl-Dxk7AT8hWL7nuLx00Gf2fS6XylatT",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"is_conflict\":true,\"reasoning\":\"The two facts assign incompatible budget preferences: spending freely versus sticking to a tight budget.\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": [],
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1783130988,
+    "model": "gpt-5.4-nano-2026-03-17",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": "default",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 31,
+      "prompt_tokens": 115,
+      "total_tokens": 146,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "prompt": "You are judging whether two memory facts about the same entity and predicate genuinely conflict (state incompatible values) or not (e.g. one is a paraphrase, refinement, or otherwise-compatible elaboration of the other).\n\nFact A: dave | budget_style = \"wants to spend freely on this trip\"\nFact B: dave | budget_style = \"wants to stick to a tight budget\"\n\nRespond with strict JSON only, no other text: {\"is_conflict\": true or false, \"reasoning\": \"<one sentence>\"}\n",
+  "system": ""
+}
