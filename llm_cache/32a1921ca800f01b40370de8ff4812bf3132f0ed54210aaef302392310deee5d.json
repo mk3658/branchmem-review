@@ -1,0 +1,39 @@
+{
+  "text": "```json\n{\n  \"resolutions\": [\n    {\n      \"entity\": \"user\",\n      \"predicate\": \"transport_choice\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both branches report observations with equal confidence (0.7) of contradictory itinerary choices (land bridge vs. ferry), making it impossible to determine which reflects the actual itinerary without additional context or user clarification.\"\n    }\n  ]\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "input_tokens": 568,
+  "output_tokens": 120,
+  "raw": {
+    "id": "msg_01GrAsVdF3XSoG75DnLG5B1D",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "```json\n{\n  \"resolutions\": [\n    {\n      \"entity\": \"user\",\n      \"predicate\": \"transport_choice\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both branches report observations with equal confidence (0.7) of contradictory itinerary choices (land bridge vs. ferry), making it impossible to determine which reflects the actual itinerary without additional context or user clarification.\"\n    }\n  ]\n}\n```",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 568,
+      "output_tokens": 120,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "prompt": "Common ancestor value for each key (null if the key didn't exist yet):\n{\n  \"user|transport_choice\": \"gets severe motion sickness on boats\"\n}\n\nBranch A's current value/source/confidence for each conflicting key:\n{\n  \"user|transport_choice\": {\n    \"value\": \"itinerary uses the land bridge instead\",\n    \"source\": \"observation\",\n    \"confidence\": 0.7\n  }\n}\n\nBranch B's current value/source/confidence for each conflicting key:\n{\n  \"user|transport_choice\": {\n    \"value\": \"itinerary includes a ferry crossing\",\n    \"source\": \"observation\",\n    \"confidence\": 0.7\n  }\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged from a common ancestor while disconnected from each other. For each conflicting (entity, predicate) key, you are given the common ancestor's value (if any) and each branch's current value, source, and confidence. 'source' is how that update was recorded: \"user\" means the user explicitly stated or corrected it; \"inference\" means the agent inferred or guessed it; \"observation\" means the agent observed it indirectly. Resolve each conflict using whatever signal actually distinguishes the two updates \u2014 e.g. a user-sourced, higher-confidence update is ordinarily more trustworthy than an inferred, lower-confidence one; the ancestor value can indicate which branch's update is more likely a genuine correction vs. a stale duplicate. Do NOT use timestamps to decide, even if you can infer relative recency \u2014 two branches that were disconnected from each other have no shared clock, so 'later' does not mean 'more correct' here. If source, confidence, and ancestor context give no real basis to prefer one branch over the other (e.g. both are equally plausible, equally-sourced preference changes), explicitly flag it as unresolvable rather than guessing."
+}

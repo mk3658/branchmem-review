@@ -1,0 +1,39 @@
+{
+  "text": "```json\n{\"is_conflict\": true, \"reasoning\": \"The two facts assign different values to the same predicate (manager_name) for the same entity (bob), stating that the manager is both 'jordan smith' and 'morgan lee', which are mutually exclusive.\"}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "input_tokens": 118,
+  "output_tokens": 66,
+  "raw": {
+    "id": "msg_01JvFfv2DHxgD2XFu5MFpVkA",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "```json\n{\"is_conflict\": true, \"reasoning\": \"The two facts assign different values to the same predicate (manager_name) for the same entity (bob), stating that the manager is both 'jordan smith' and 'morgan lee', which are mutually exclusive.\"}\n```",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 118,
+      "output_tokens": 66,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "prompt": "You are judging whether two memory facts about the same entity and predicate genuinely conflict (state incompatible values) or not (e.g. one is a paraphrase, refinement, or otherwise-compatible elaboration of the other).\n\nFact A: bob | manager_name = \"jordan smith\"\nFact B: bob | manager_name = \"morgan lee\"\n\nRespond with strict JSON only, no other text: {\"is_conflict\": true or false, \"reasoning\": \"<one sentence>\"}\n",
+  "system": ""
+}

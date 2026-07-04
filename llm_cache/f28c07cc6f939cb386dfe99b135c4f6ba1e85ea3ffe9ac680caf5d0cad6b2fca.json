@@ -1,0 +1,39 @@
+{
+  "text": "```json\n{\"is_conflict\": true, \"reasoning\": \"Relaxed and tired are distinct emotional states that cannot both accurately describe Frank's mood simultaneously.\"}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "input_tokens": 113,
+  "output_tokens": 39,
+  "raw": {
+    "id": "msg_01Mf9tESaXyRevEhfmmuFJpL",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "```json\n{\"is_conflict\": true, \"reasoning\": \"Relaxed and tired are distinct emotional states that cannot both accurately describe Frank's mood simultaneously.\"}\n```",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 113,
+      "output_tokens": 39,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "prompt": "You are judging whether two memory facts about the same entity and predicate genuinely conflict (state incompatible values) or not (e.g. one is a paraphrase, refinement, or otherwise-compatible elaboration of the other).\n\nFact A: frank | mood = \"relaxed\"\nFact B: frank | mood = \"tired\"\n\nRespond with strict JSON only, no other text: {\"is_conflict\": true or false, \"reasoning\": \"<one sentence>\"}\n",
+  "system": ""
+}

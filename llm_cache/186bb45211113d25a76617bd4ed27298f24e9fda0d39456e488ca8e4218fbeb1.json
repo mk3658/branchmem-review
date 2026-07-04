@@ -1,0 +1,39 @@
+{
+  "text": "```json\n{\n  \"resolutions\": [\n    {\n      \"entity\": \"user\",\n      \"predicate\": \"gift_choice\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both values are mutually exclusive and specific (dog leash vs. scarf); without metadata about which branch was updated more recently or has higher confidence, there is no basis to prefer one over the other.\"\n    }\n  ]\n}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "input_tokens": 374,
+  "output_tokens": 115,
+  "raw": {
+    "id": "msg_01HgjrgvUYQibSV7zcC6FQsT",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "```json\n{\n  \"resolutions\": [\n    {\n      \"entity\": \"user\",\n      \"predicate\": \"gift_choice\",\n      \"resolution\": \"flagged_unresolved\",\n      \"value\": null,\n      \"justification\": \"Both values are mutually exclusive and specific (dog leash vs. scarf); without metadata about which branch was updated more recently or has higher confidence, there is no basis to prefer one over the other.\"\n    }\n  ]\n}\n```",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 374,
+      "output_tokens": 115,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "prompt": "Branch A's current value for each conflicting key:\n{\n  \"user|gift_choice\": \"gift is a dog leash\"\n}\n\nBranch B's current value for each conflicting key:\n{\n  \"user|gift_choice\": \"gift is a scarf\"\n}\n\nFor EACH key listed above, decide how to reconcile it. Respond with strict JSON only,\nno other text, in this exact shape:\n\n{\"resolutions\": [\n  {\"entity\": \"...\", \"predicate\": \"...\", \"resolution\": \"kept_from_a\" | \"kept_from_b\" | \"merged\" | \"flagged_unresolved\",\n    \"value\": \"<the reconciled value, or null if flagged_unresolved>\", \"justification\": \"<one sentence>\"}\n]}\n",
+  "system": "You are reconciling two independently-updated branches of an agent's memory that diverged while disconnected from each other. You are NOT given the common ancestor's value for these keys, and you are NOT given any source, confidence, or timestamp metadata \u2014 only the bare (entity, predicate) key and each branch's raw current value. Decide, from the content of the two values alone, whether one is more likely correct than the other (e.g. one reads as a specific correction of the other, or as more precise/plausible phrasing of the same fact), whether they can be sensibly merged into one value, or whether nothing about the two raw values themselves gives you any real basis to prefer one over the other. If there is no such basis, explicitly flag it as unresolvable rather than guessing \u2014 do not invent a preference where the text gives you none."
+}

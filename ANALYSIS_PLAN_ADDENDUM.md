@@ -56,6 +56,52 @@ so an independent party could validate ground-truth labels, extraction
 correctness, and preferred resolutions. The paper does not claim this
 validation was performed — only that the protocol and a sample exist.
 
+## A5. Cross-vendor robustness check (added 2026-07-04)
+
+Motivation: the existing robustness check (`results/final/robustness_second_model.json`)
+swaps `gpt-5.4-nano` for `gpt-5.4-mini` — a same-provider, same-family model
+swap — leaving open whether the paper's effects are properties of LLMs in
+general or specific to this provider's models. With real access to a second
+vendor's API (Anthropic) obtained after the locked run, three existing
+post-hoc analyses were replicated with `claude-haiku-4-5-20251001` (chosen
+to match the "cheapest available model" cost tier already used for the
+OpenAI-side results), on identical scenario constructions (same seeds):
+
+- **RQ1, same 20 scenarios as the `gpt-5.4-mini` check**
+  (`results/final/cross_vendor_rq1.json`): `claude-haiku-4-5` scores
+  $0.936$ mean accuracy vs. $0.914$ (`gpt-5.4-nano`) and $0.929$
+  (`gpt-5.4-mini`) on the identical scenarios — paired diff. vs. nano
+  $+0.021$, $95\%$ CI $[0.000, 0.043]$, $p{=}0.10$. Direction and magnitude
+  hold across a genuinely different vendor, not just a same-provider swap.
+- **`semantic_resolvable`, identical 150-scenario construction**
+  (`results/final/cross_vendor_semantic_resolvable.json`): every
+  confidence-independent strategy, including `ThreeWayLLMMerge`,
+  `TwoWayLLMMerge`, and `RawTextLLMMerge`, again scores **exactly $0.000$**
+  — the same striking negative result as the original `gpt-5.4-nano` run,
+  now shown to generalize across vendors rather than being an artifact of
+  one cheap model.
+- **Real MemoryAgentBench content** (`results/final/cross_vendor_mab.json`):
+  `ThreeWayLLMMerge` again scores exactly $0.000$ (vs. `gpt-5.4-nano`'s
+  $0.004$), confirming complete abstention on real content is a property of
+  the data (no source-reliability signal exists to read), not an
+  OpenAI-specific quirk. Note: this replication's naive-baseline numbers
+  (e.g. `last_writer_wins` $0.355$ vs. the original $0.506$) differ from
+  the original MAB secondary analysis because that earlier ad hoc script
+  did not record the random seed used for branch construction — a
+  reproducibility gap in that earlier analysis, now fixed going forward
+  (this script uses and discloses `seed=2026`). This does not affect the
+  `ThreeWayLLMMerge`/`ConfidenceRuleMerge` result: both are forced to
+  exactly $0$ by the data's construction (source/confidence are never
+  randomized, only which value lands on which branch is), so that result
+  is seed-invariant; only the naive baselines' absolute values are
+  seed-sensitive, as expected for a randomized construction.
+
+Scripts: `scripts/run_cross_vendor_rq1.py`,
+`scripts/run_cross_vendor_semantic_resolvable.py`,
+`scripts/run_cross_vendor_mab.py`. Does not change or retract any
+confirmatory or prior post-hoc result — it is additional, disclosed
+evidence on the "single model family" limitation.
+
 ## Standing rule for this addendum
 
 Any further post-hoc analysis added after this point must be appended here

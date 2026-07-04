@@ -10,6 +10,7 @@ without spending on new API calls (the cache in `llm_cache/` is committed).
 | `ThreeWayLLMMerge`, `TwoWayLLMMerge`, `RawTextLLMMerge` (locked run) | `gpt-5.4-nano` | `0.0` | `8000`* | provider default (not set) |
 | `LLMJudgeConflictDetector` | `gpt-5.4-nano` | `0.0` | `1024` | provider default (not set) |
 | Post-hoc `gpt-5.4-mini` robustness check | `gpt-5.4-mini` | `0.0` | `1024` | provider default (not set) |
+| Post-hoc cross-vendor checks (`run_cross_vendor_*.py`) | `claude-haiku-4-5-20251001` | `0.0` | `1024`/`8000` | n/a (Anthropic backend) |
 
 \* The original locked run used `max_tokens=1024`/`2048`; raised to `8000`
 for the expanded MemoryAgentBench and later ablation runs after discovering

@@ -1,0 +1,123 @@
+{
+  "source": "mab_extension",
+  "model": "claude-haiku-4-5-20251001",
+  "max_conflict_keys": 50,
+  "max_tokens": 8000,
+  "n_rows": 8,
+  "total_conflict_pairs": 270,
+  "per_row": [
+    {
+      "row": 0,
+      "n_questions": 30,
+      "n_conflict_pairs": 30,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.3333333333333333,
+        "naive_concat": 0.6,
+        "branch_discard_always_b": 0.4,
+        "branch_discard_fewer_updates": 0.4,
+        "confidence_rule": 0.0,
+        "three_way_llm": 0.0
+      }
+    },
+    {
+      "row": 1,
+      "n_questions": 35,
+      "n_conflict_pairs": 35,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.37142857142857144,
+        "naive_concat": 0.6571428571428571,
+        "branch_discard_always_b": 0.34285714285714286,
+        "branch_discard_fewer_updates": 0.34285714285714286,
+        "confidence_rule": 0.0,
+        "three_way_llm": 0.0
+      }
+    },
+    {
+      "row": 2,
+      "n_questions": 35,
+      "n_conflict_pairs": 35,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.34285714285714286,
+        "naive_concat": 0.6,
+        "branch_discard_always_b": 0.4,
+        "branch_discard_fewer_updates": 0.4,
+        "confidence_rule": 0.0,
+        "three_way_llm": 0.0
+      }
+    },
+    {
+      "row": 3,
+      "n_questions": 35,
+      "n_conflict_pairs": 35,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.37142857142857144,
+        "naive_concat": 0.6285714285714286,
+        "branch_discard_always_b": 0.37142857142857144,
+        "branch_discard_fewer_updates": 0.37142857142857144,
+        "confidence_rule": 0.0,
+        "three_way_llm": 0.0
+      }
+    },
+    {
+      "row": 4,
+      "n_questions": 30,
+      "n_conflict_pairs": 30,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.3333333333333333,
+        "naive_concat": 0.6,
+        "branch_discard_always_b": 0.4,
+        "branch_discard_fewer_updates": 0.4,
+        "confidence_rule": 0.0,
+        "three_way_llm": 0.0
+      }
+    },
+    {
+      "row": 5,
+      "n_questions": 35,
+      "n_conflict_pairs": 35,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.37142857142857144,
+        "naive_concat": 0.6571428571428571,
+        "branch_discard_always_b": 0.34285714285714286,
+        "branch_discard_fewer_updates": 0.34285714285714286,
+        "confidence_rule": 0.0,
+        "three_way_llm": 0.0
+      }
+    },
+    {
+      "row": 6,
+      "n_questions": 35,
+      "n_conflict_pairs": 35,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.34285714285714286,
+        "naive_concat": 0.6,
+        "branch_discard_always_b": 0.4,
+        "branch_discard_fewer_updates": 0.4,
+        "confidence_rule": 0.0,
+        "three_way_llm": 0.0
+      }
+    },
+    {
+      "row": 7,
+      "n_questions": 35,
+      "n_conflict_pairs": 35,
+      "accuracy_by_strategy": {
+        "last_writer_wins": 0.37142857142857144,
+        "naive_concat": 0.6285714285714286,
+        "branch_discard_always_b": 0.37142857142857144,
+        "branch_discard_fewer_updates": 0.37142857142857144,
+        "confidence_rule": 0.0,
+        "three_way_llm": 0.0
+      }
+    }
+  ],
+  "mean_accuracy_by_strategy": {
+    "last_writer_wins": 0.3547619047619047,
+    "naive_concat": 0.6214285714285714,
+    "branch_discard_always_b": 0.37857142857142856,
+    "branch_discard_fewer_updates": 0.37857142857142856,
+    "confidence_rule": 0.0,
+    "three_way_llm": 0.0
+  },
+  "note": "post-hoc, exploratory: cross-vendor replication of the real-content MemoryAgentBench secondary analysis (identical construction to results/final/mab_secondary_analysis_expanded.json's gpt-5.4-nano run, same 8 rows, max_conflict_keys=50). NOT part of ANALYSIS_PLAN.md confirmatory tests."
+}

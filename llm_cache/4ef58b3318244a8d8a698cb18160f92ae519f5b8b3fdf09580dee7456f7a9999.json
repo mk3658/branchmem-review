@@ -1,0 +1,39 @@
+{
+  "text": "```json\n{\"is_conflict\": true, \"reasoning\": \"The two facts assign different phone numbers to the same entity Dave, which are incompatible values for the same predicate.\"}\n```",
+  "model": "claude-haiku-4-5-20251001",
+  "input_tokens": 122,
+  "output_tokens": 45,
+  "raw": {
+    "id": "msg_011bacE5TDavYfhmy4o8kAR7",
+    "container": null,
+    "content": [
+      {
+        "citations": null,
+        "text": "```json\n{\"is_conflict\": true, \"reasoning\": \"The two facts assign different phone numbers to the same entity Dave, which are incompatible values for the same predicate.\"}\n```",
+        "type": "text"
+      }
+    ],
+    "model": "claude-haiku-4-5-20251001",
+    "role": "assistant",
+    "stop_details": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "type": "message",
+    "usage": {
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "inference_geo": "not_available",
+      "input_tokens": 122,
+      "output_tokens": 45,
+      "output_tokens_details": null,
+      "server_tool_use": null,
+      "service_tier": "standard"
+    }
+  },
+  "prompt": "You are judging whether two memory facts about the same entity and predicate genuinely conflict (state incompatible values) or not (e.g. one is a paraphrase, refinement, or otherwise-compatible elaboration of the other).\n\nFact A: dave | phone_number = \"555-0187\"\nFact B: dave | phone_number = \"555-0101\"\n\nRespond with strict JSON only, no other text: {\"is_conflict\": true or false, \"reasoning\": \"<one sentence>\"}\n",
+  "system": ""
+}

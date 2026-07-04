@@ -133,12 +133,16 @@ scripts/
   run_semantic_resolvable_experiment.py   semantic_resolvable-category experiment
   run_balanced_detector_benchmark.py       balanced detector benchmark
   sample_for_audit.py                        builds annotation/audit_sample.csv
+  run_cross_vendor_rq1.py                    RQ1 replication with a second vendor
+  run_cross_vendor_semantic_resolvable.py      semantic_resolvable replication, second vendor
+  run_cross_vendor_mab.py                      MAB real-content replication, second vendor
 
 results/
   pilot/pilot_summary.json
   final/{results.csv,results.json,stats_output.json,accuracy_by_strategy.png,
           findings.md, semantic_resolvable.json, balanced_detector_benchmark.json,
-          abstention_metrics_report.json, category_breakdown_extra_strategies.json}
+          abstention_metrics_report.json, category_breakdown_extra_strategies.json,
+          cross_vendor_rq1.json, cross_vendor_semantic_resolvable.json, cross_vendor_mab.json}
 ```
 
 ## Results summary
@@ -157,6 +161,13 @@ MemoryAgentBench content — which has no engineered signal — the ranking
 inverts completely (`ThreeWayLLMMerge`: 0.936 → 0.004), with the model
 abstaining on every conflict rather than guessing.
 
+A cross-vendor replication with `claude-haiku-4-5` (a genuinely different
+model provider, not just a same-provider swap) reproduces all three of
+these findings: RQ1's effect holds (0.936 vs. 0.914 on identical
+scenarios), the `semantic_resolvable` category again scores exactly 0.000,
+and the MAB real-content abstention also scores exactly 0.000 — none of
+this is specific to one provider's cheap model.
+
 Conflict detection (cheap embedding/NLI detectors vs. an LLM-judge
 reference) is a genuine **mixed result**: the locked-set precision of 1.0
 is a construction artifact of an all-positive test set, and both
@@ -170,9 +181,10 @@ Full numbers, category breakdowns, and every caveat: `results/final/findings.md`
 
 ## Known limitations (see findings.md and ANALYSIS_PLAN_ADDENDUM.md for the full list)
 
-- Single, cheap LLM (`gpt-5.4-nano`) for nearly all results; the one
-  robustness check is a same-provider swap to a slightly larger model on a
-  small scenario subset — no different-vendor or open-weight model tested.
+- Single, cheap LLM (`gpt-5.4-nano`) for the confirmatory results; robustness
+  checks cover a same-provider swap (`gpt-5.4-mini`) and a different-vendor
+  swap (`claude-haiku-4-5`), both replicating the key findings — but only
+  one cheap model per vendor was tested, and no open-weight model.
 - The real-content negative result rests on 8 MemoryAgentBench rows (230
   conflicts after raising a per-row cap) — the full available dataset for
   this task, not a cost-driven subsample, but still a small sample.

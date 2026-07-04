@@ -1,0 +1,100 @@
+{
+  "note": "post-hoc, exploratory: cross-vendor RQ1 replication on the identical 20 scenarios (seed=2026, divergence_span=4.0) already used for the gpt-5.4-mini same-provider robustness check. Tests whether the RQ1 effect is OpenAI-specific or holds across a genuinely different model vendor. NOT part of ANALYSIS_PLAN.md's confirmatory tests.",
+  "run_metadata": {
+    "seed": 2026,
+    "n_scenarios": 20,
+    "divergence_span": 4.0,
+    "model": "claude-haiku-4-5-20251001"
+  },
+  "per_scenario": [
+    {
+      "scenario_id": "synth_2026_0000",
+      "accuracy": 0.8571428571428571
+    },
+    {
+      "scenario_id": "synth_2026_0001",
+      "accuracy": 0.8571428571428571
+    },
+    {
+      "scenario_id": "synth_2026_0002",
+      "accuracy": 1.0
+    },
+    {
+      "scenario_id": "synth_2026_0003",
+      "accuracy": 1.0
+    },
+    {
+      "scenario_id": "synth_2026_0004",
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "scenario_id": "synth_2026_0005",
+      "accuracy": 1.0
+    },
+    {
+      "scenario_id": "synth_2026_0006",
+      "accuracy": 1.0
+    },
+    {
+      "scenario_id": "synth_2026_0007",
+      "accuracy": 1.0
+    },
+    {
+      "scenario_id": "synth_2026_0008",
+      "accuracy": 1.0
+    },
+    {
+      "scenario_id": "synth_2026_0009",
+      "accuracy": 0.8571428571428571
+    },
+    {
+      "scenario_id": "synth_2026_0010",
+      "accuracy": 1.0
+    },
+    {
+      "scenario_id": "synth_2026_0011",
+      "accuracy": 1.0
+    },
+    {
+      "scenario_id": "synth_2026_0012",
+      "accuracy": 1.0
+    },
+    {
+      "scenario_id": "synth_2026_0013",
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "scenario_id": "synth_2026_0014",
+      "accuracy": 1.0
+    },
+    {
+      "scenario_id": "synth_2026_0015",
+      "accuracy": 1.0
+    },
+    {
+      "scenario_id": "synth_2026_0016",
+      "accuracy": 1.0
+    },
+    {
+      "scenario_id": "synth_2026_0017",
+      "accuracy": 1.0
+    },
+    {
+      "scenario_id": "synth_2026_0018",
+      "accuracy": 0.8571428571428571
+    },
+    {
+      "scenario_id": "synth_2026_0019",
+      "accuracy": 0.8571428571428571
+    }
+  ],
+  "mean_accuracy_claude_haiku": 0.9357142857142857,
+  "mean_accuracy_gpt_5_4_nano_same_scenarios": 0.9142857142857143,
+  "mean_accuracy_gpt_5_4_mini_same_scenarios": 0.9285714285714286,
+  "paired_comparison_claude_vs_nano": {
+    "mean_diff": 0.02142857142857143,
+    "ci_low": 0.0,
+    "ci_high": 0.04285714285714287,
+    "p_value": 0.10247043485974941
+  }
+}

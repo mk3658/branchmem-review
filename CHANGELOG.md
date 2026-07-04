@@ -34,6 +34,28 @@ the boundary condition itself the contribution.
 - **Docs**: this file, `REPRODUCIBILITY.md`, `ANALYSIS_PLAN_ADDENDUM.md`
   added; `README.md` updated.
 
+## Round 5 (2026-07-04): Cross-vendor robustness check
+
+Real Anthropic API access obtained after the locked run. Replicated three
+existing post-hoc analyses with `claude-haiku-4-5-20251001` on identical
+scenario constructions, directly testing whether the paper's effects are
+OpenAI-specific:
+
+- **RQ1** (same 20 scenarios as the `gpt-5.4-mini` check): `claude-haiku-4-5`
+  scores $0.936$ vs.\ $0.914$ (nano) / $0.929$ (mini) — effect holds across
+  a genuinely different vendor.
+- **`semantic_resolvable`** (identical 150-scenario construction): every
+  confidence-independent strategy again scores exactly $0.000$ — the
+  paper's most striking negative result generalizes across vendors.
+- **Real MemoryAgentBench content**: `ThreeWayLLMMerge` again scores
+  exactly $0.000$ — complete abstention on real content is a property of
+  the data, not one provider's model.
+- **New**: `scripts/run_cross_vendor_rq1.py`,
+  `scripts/run_cross_vendor_semantic_resolvable.py`,
+  `scripts/run_cross_vendor_mab.py`; results in `results/final/cross_vendor_*.json`.
+- **Docs**: `ANALYSIS_PLAN_ADDENDUM.md` item A5; paper's Limitations,
+  Section 5.5/5.6/5.7, and Appendix H updated.
+
 ## Earlier rounds
 
 Phases 0-7 (initial build through `findings.md`), a first review-response
