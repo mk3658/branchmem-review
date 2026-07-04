@@ -14,8 +14,7 @@ without spending on new API calls (the cache in `llm_cache/` is committed).
 \* The original locked run used `max_tokens=1024`/`2048`; raised to `8000`
 for the expanded MemoryAgentBench and later ablation runs after discovering
 that large batched JSON responses were silently truncated at the lower
-limits (see `PROGRESS.md`, "First MAB expansion attempt produced corrupted
-data"). All numbers reported in the paper use the corrected `8000` limit for
+limits. All numbers reported in the paper use the corrected `8000` limit for
 any call that batches more than ~15 conflicts.
 
 Backend: `branchmem/llm/openai_compatible_backend.py`, OpenAI's chat
@@ -27,10 +26,10 @@ the fix per backend instance — this is a client-side compatibility shim, not
 a change to the requested decoding parameters themselves.
 
 **API run dates**: locked confirmatory run and pilot, 2026 (see git history
-/ `PROGRESS.md` phase headers for exact dates); review-response rounds
-(new baselines, expanded MAB, `RawTextLLMMerge`, resolvable-category power
-expansion, abstention metrics, semantic-resolvable category) run
-2026-07-04, per this file's own edit date and `PROGRESS.md`.
+for exact dates); review-response rounds (new baselines, expanded MAB,
+`RawTextLLMMerge`, resolvable-category power expansion, abstention
+metrics, semantic-resolvable category) run 2026-07-04, per this file's own
+edit date.
 
 ## Retry policy and failure handling
 
@@ -44,8 +43,7 @@ expansion, abstention metrics, semantic-resolvable category) run
   is marked `FLAGGED_UNRESOLVED` rather than guessed — this is a
   conservative fallback, not a silent skip. Historical JSON failure rate:
   zero in the current cache (verified by scanning `llm_cache/*.json` for
-  entries whose `text` field fails `json.loads()` — see `PROGRESS.md`'s
-  cache-cleanup notes for the two occasions this caught a real bug).
+  entries whose `text` field fails `json.loads()`).
 
 ## Cache key construction
 
@@ -76,8 +74,9 @@ detector benchmark) is committed under `llm_cache/`, so none of the above
 commands make a network call as long as the exact prompt/config combination
 was already run once.
 
-## Total call volume (updated as new rounds land)
+## Total call volume
 
-See `PROGRESS.md` for the running total of real calls, input/output token
-counts, and estimated cost per round; the paper's Experimental Setup
-section reports the headline total for the locked run specifically.
+The paper's Experimental Setup section reports the headline total for the
+locked run ($460$ calls; $111{,}403$ input / $45{,}462$ output tokens);
+later post-hoc rounds add further cached calls under `llm_cache/`, all
+released alongside this repository.

@@ -118,10 +118,9 @@ strict F1-tolerance criterion doesn't fully hold.
   15% noise) is a deliberately clean, legible proxy for real-world source
   reliability; real agent memory systems may not have such a clean signal
   available. The MAB extension (`branchmem/benchmark/mab_extension.py`,
-  validated against real MemoryAgentBench data in Phase 4 — see
-  PROGRESS.md) is a secondary, more realistic-content validation path not
-  included in this locked run; extending Phase 6 to include it is a natural
-  next step (see below).
+  validated against real MemoryAgentBench data) is a secondary, more
+  realistic-content validation path not included in this locked run;
+  extending Phase 6 to include it is a natural next step (see below).
 - **Single model**: all LLM-dependent results (`three_way_llm`, `llm_judge`)
   used one model (`gpt-5.4-nano`, the cheapest available, per an explicit
   cost-minimization instruction). Whether the H1/H2 effect sizes hold with a

@@ -1346,8 +1346,8 @@ finding about semantic reasoning, in the same family as
 Section~\ref{sec:discussion}'s piloting bugs. We caught it by inspecting a
 cached response directly rather than trusting the aggregate $0.000$,
 rewrote the templates so the constraint lives at the conflicting key, and
-re-ran (new API calls; both the flawed and corrected runs are logged in
-\texttt{PROGRESS.md}).
+re-ran (new API calls; both the flawed and corrected runs are cached under
+\texttt{llm\_cache/} and released).
 
 \textbf{Result after the fix.} Every confidence-independent strategy still
 scores \emph{exactly} $0.000$: \textsc{ConfidenceRuleMerge} correctly flags

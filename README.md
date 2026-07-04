@@ -6,10 +6,9 @@ branches of an agent's natural-language memory (diverged while
 disconnected, no shared timeline, no option to abort or negotiate live) is
 reliable — and reporting, honestly, where it is not.
 
-See `PROGRESS.md` for the full build log (bugs found and fixed, every
-review-response round), `ANALYSIS_PLAN.md` for the preregistered analysis,
+See `ANALYSIS_PLAN.md` for the preregistered analysis,
 `ANALYSIS_PLAN_ADDENDUM.md` for every post-hoc addition since, and
-`CHANGELOG.md` for a terse chronological index. **Results:
+`CHANGELOG.md` for a chronological index of every substantive change. **Results:
 `results/final/findings.md`; reproduction details: `REPRODUCIBILITY.md`.**
 
 Headline finding: LLM-mediated merging beats naive baselines only when

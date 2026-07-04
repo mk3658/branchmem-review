@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Phase 6: the LOCKED full experiment run. Uses exactly the configuration
 preregistered in ANALYSIS_PLAN.md — do not change parameters here without
-logging the change and reason in PROGRESS.md's "Deviations" section.
+logging the change and reason in ANALYSIS_PLAN_ADDENDUM.md.
 """
 
 from __future__ import annotations

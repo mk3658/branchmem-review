@@ -1,8 +1,7 @@
 # CHANGELOG.md
 
-Running log of substantive changes to the BranchMem codebase and paper.
-`PROGRESS.md` has the full narrative (bugs found, reasoning); this file is
-the terse, chronological, file-level index.
+Chronological, file-level index of substantive changes to the BranchMem
+codebase and paper.
 
 ## Round 4 (2026-07-04): Reframing around provenance + abstention boundary conditions
 
@@ -35,13 +34,10 @@ the boundary condition itself the contribution.
 - **Docs**: this file, `REPRODUCIBILITY.md`, `ANALYSIS_PLAN_ADDENDUM.md`
   added; `README.md` updated.
 
-See `PROGRESS.md` for full details, exact numbers, and file paths as each
-phase lands.
-
 ## Earlier rounds
 
-See `PROGRESS.md` — Phases 0-7 (initial build through findings.md), the
-first review-response round (`ConfidenceRuleMerge`/`TwoWayLLMMerge`
-ablations, expanded MAB sample), and the second review-response round
-(`RawTextLLMMerge`, resolvable-category power expansion, parser-precision
-self-audit, RQ2 F1 bootstrap CIs).
+Phases 0-7 (initial build through `findings.md`), a first review-response
+round (`ConfidenceRuleMerge`/`TwoWayLLMMerge` ablations, expanded MAB
+sample), and a second review-response round (`RawTextLLMMerge`,
+resolvable-category power expansion, parser-precision self-audit, RQ2 F1
+bootstrap CIs).

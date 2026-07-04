@@ -1,7 +1,7 @@
 """Extends MemoryAgentBench's Fact Consolidation task (Hu, Wang & McAuley,
 ICLR 2026, arXiv:2507.05257) with a branch-fork step.
 
-Accessibility check (done during Phase 4, logged in PROGRESS.md): the dataset
+Accessibility check (done during Phase 4): the dataset
 IS publicly accessible — MIT-licensed code at
 https://github.com/HUST-AI-HYZ/MemoryAgentBench and data at
 https://huggingface.co/datasets/ai-hyz/MemoryAgentBench (Conflict_Resolution
@@ -19,9 +19,9 @@ relation) supersede earlier ones), and the overall "numbered list of facts
 with counterfactual edits" structure MAB built from MQuAKE.
 
 What is newly built: (1) the sentence-template regex parser below
-(`parse_context_facts`), calibrated against a real sample of the dataset —
-see PROGRESS.md for coverage (measured at 99.9% of 18,337 unique context
-lines across 38 hand-written templates); (2) the branch-fork step
+(`parse_context_facts`), calibrated against a real sample of the dataset
+(measured at 99.9% coverage of 18,337 unique context lines across 38
+hand-written templates); (2) the branch-fork step
 (`build_branch_scenario_from_mab_row`), which is BranchMem's actual research
 contribution and has no analogue in MAB (MAB's Fact Consolidation is a single
 continuous timeline, not two disconnected branches); (3) ground-truth

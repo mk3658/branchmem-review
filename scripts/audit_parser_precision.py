@@ -24,8 +24,8 @@ Usage: source .venv/bin/activate && PYTHONPATH=. python
 scripts/audit_parser_precision.py --n 50 --seed 12345
 Then manually inspect the written `sampled_triples` against their
 `raw_line` and fill in `n_errors_found` / `precision_point_estimate` /
-`precision_95pct_clopper_pearson_ci` by hand (see PROGRESS.md and
-Section 3.5 of paper/acl_latex.tex for the audit actually performed).
+`precision_95pct_clopper_pearson_ci` by hand (see Section 3.5 of
+paper/acl_latex.tex for the audit actually performed).
 """
 
 from __future__ import annotations

@@ -2,16 +2,16 @@
 
 Written after the Phase 5 pilot (`results/pilot/pilot_summary.json`, 20 synthetic
 scenarios, `gpt-5.4-nano`, seed=2026) and BEFORE the Phase 6 locked run. Per
-project protocol, this plan is not changed after seeing Phase 6 results except
-for a documented bug fix, logged in `PROGRESS.md` with a note on whether it
-could have affected pilot conclusions.
+project protocol, this plan is not changed after seeing Phase 6 results
+except for a documented bug fix, with a note on whether it could have
+affected pilot conclusions.
 
 ## 0. What changed during piloting (before this plan was written)
 
 Preregistration happens once, after the pilot is done informing it — the pilot
 itself is allowed to iterate. Three fixes were made to the scenario generator
-and `ThreeWayLLMMerge` during Phase 5, each logged in `PROGRESS.md` with the
-bug/gap that motivated it:
+and `ThreeWayLLMMerge` during Phase 5, each documented with the bug/gap that
+motivated it:
 
 1. **Ancestor-context bug**: `_sample_conflict_key`'s "prefer an existing
    ancestor key" logic was dead code (a pre-seeded `used_keys` set excluded
@@ -180,8 +180,8 @@ z_{0.80} ≈ 0.84: n ≈ ((2.50+0.84)/0.5)² ≈ 45. **n_scenarios = 60** is set
 Phase 6 (comfortable margin above the ~45 estimated minimum, still cheap on
 `gpt-5.4-nano`: the pilot's 20 scenarios cost ~57K input / ~25K output tokens
 across all LLM-dependent components combined, so 60 scenarios is estimated at
-roughly 3x that — well within "minimize spend" — see PROGRESS.md for the
-actual Phase 6 token count once run).
+roughly 3x that — well within "minimize spend" (the paper's Experimental
+Setup section reports the actual Phase 6 token count).
 
 ## 6. Non-determinism handling (locked from pilot observation)
 
@@ -203,6 +203,7 @@ the paired bootstrap CI.
 
 Any change to scenario generation parameters, merge/detector implementations,
 or the statistical tests above, made after this document is committed, must
-be logged in `PROGRESS.md`'s "Deviations from analysis plan" section with the
-reason — including whether it could have affected the interpretation of any
-result already computed. Bug fixes are allowed; result-shopping is not.
+be documented with the reason — including whether it could have affected
+the interpretation of any result already computed. Bug fixes are allowed;
+result-shopping is not. Every such deviation in this project is disclosed
+in `ANALYSIS_PLAN_ADDENDUM.md` and `CHANGELOG.md`.

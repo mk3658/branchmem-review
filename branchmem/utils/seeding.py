@@ -1,7 +1,7 @@
 """Central seeding for deterministic scenario generation and non-LLM components.
 
 LLM API calls are NOT made deterministic by this — see llm/cache.py and
-PROGRESS.md for the honesty requirement around LLM non-determinism.
+REPRODUCIBILITY.md for the honesty requirement around LLM non-determinism.
 """
 
 from __future__ import annotations

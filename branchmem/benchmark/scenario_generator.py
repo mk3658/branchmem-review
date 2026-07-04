@@ -9,7 +9,7 @@ ambiguous" and "resolve confidently" as valid correct behaviors depending on
 scenario type.
 
 Design note on ground truth for resolvable conflicts (revised after a Phase 5
-pilot run surfaced a construct-validity problem — see PROGRESS.md): a
+pilot run surfaced a construct-validity problem): a
 resolvable conflict's correct value is tied to a source-reliability signal —
 one branch's update is "user"-sourced (explicit, high confidence), the other
 "inference"-sourced (agent-inferred, lower confidence) — with ground truth

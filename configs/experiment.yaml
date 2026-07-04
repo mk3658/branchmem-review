@@ -1,6 +1,6 @@
 # Overrides applied on top of default.yaml for the locked Phase 6 experiment
 # run. Finalized in ANALYSIS_PLAN.md (Phase 5) — do not change without
-# logging the change and reason in PROGRESS.md's "Deviations" section.
+# logging the change and reason in ANALYSIS_PLAN_ADDENDUM.md.
 
 llm:
   backend: openai_compatible

@@ -71,9 +71,10 @@ def build_locked_pairs():
         # actual call (run_full_benchmark(..., scenario_config_kwargs=None)) --
         # i.e. ScenarioConfig defaults (n_orthogonal_a=n_orthogonal_b=2), NOT the
         # n_orthogonal_a=n_orthogonal_b=1 written in ANALYSIS_PLAN.md sec.1 (a
-        # documentation discrepancy discovered and logged during this review
-        # round -- see PROGRESS.md). Reproducing the code's actual behavior here,
-        # not the plan document's prose, is what makes this a faithful replay.
+        # documentation discrepancy, disclosed in paper/acl_latex.tex's
+        # "Locked Scenario Configuration" appendix). Reproducing the code's
+        # actual behavior here, not the plan document's prose, is what makes
+        # this a faithful replay.
         config = ScenarioConfig(divergence_span=span)
         scenarios.extend(generator.generate(n_per_span, config, seed=LOCKED_SEED + i))
     fact_lookup = {}

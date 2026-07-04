@@ -1,7 +1,7 @@
 """Deterministic, offline LLM backend for unit tests and development only.
 
 NEVER use this backend to produce reported experimental results (Phase 5/6) —
-see PROGRESS.md and the project's determinism/honesty requirement. Its output
+every reported number must come from a real, cached API call. Its output
 is a hash-derived placeholder string, not a model's actual reasoning.
 """
 
