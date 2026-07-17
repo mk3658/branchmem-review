@@ -1,0 +1,108 @@
+{
+  "note": "post-hoc, exploratory: source-signal-noise sensitivity sweep over the identical locked-run scenarios (seed 2026, n=60). ThreeWayLLMMerge calls are cache hits against the locked run (facts unchanged; only ground-truth scoring varies with noise). NOT part of ANALYSIS_PLAN.md confirmatory tests.",
+  "run_metadata": {
+    "seed": 2026,
+    "spans": [
+      4.0,
+      10.0,
+      20.0
+    ],
+    "n_per_span": 20,
+    "model": "gpt-5.4-nano",
+    "noise_levels": [
+      0.0,
+      0.05,
+      0.15,
+      0.3,
+      0.5
+    ],
+    "locked_noise": 0.15
+  },
+  "per_noise": [
+    {
+      "noise": 0.0,
+      "overall_mean_accuracy": {
+        "last_writer_wins": 0.7166666666666667,
+        "naive_concat": 0.6952380952380955,
+        "branch_discard_always_b": 0.44761904761904747,
+        "confidence_rule": 1.0,
+        "three_way_llm": 0.9785714285714284
+      },
+      "resolvable_mean_accuracy": {
+        "last_writer_wins": 0.5083333333333333,
+        "naive_concat": 0.43333333333333335,
+        "branch_discard_always_b": 0.5666666666666667,
+        "confidence_rule": 1.0,
+        "three_way_llm": 0.975
+      }
+    },
+    {
+      "noise": 0.05,
+      "overall_mean_accuracy": {
+        "last_writer_wins": 0.7166666666666667,
+        "naive_concat": 0.6952380952380955,
+        "branch_discard_always_b": 0.4476190476190473,
+        "confidence_rule": 0.9857142857142858,
+        "three_way_llm": 0.964285714285714
+      },
+      "resolvable_mean_accuracy": {
+        "last_writer_wins": 0.5083333333333333,
+        "naive_concat": 0.43333333333333335,
+        "branch_discard_always_b": 0.5666666666666667,
+        "confidence_rule": 0.95,
+        "three_way_llm": 0.925
+      }
+    },
+    {
+      "noise": 0.15,
+      "overall_mean_accuracy": {
+        "last_writer_wins": 0.7166666666666667,
+        "naive_concat": 0.7000000000000001,
+        "branch_discard_always_b": 0.44285714285714267,
+        "confidence_rule": 0.9619047619047616,
+        "three_way_llm": 0.94047619047619
+      },
+      "resolvable_mean_accuracy": {
+        "last_writer_wins": 0.5083333333333333,
+        "naive_concat": 0.45,
+        "branch_discard_always_b": 0.55,
+        "confidence_rule": 0.8666666666666667,
+        "three_way_llm": 0.8416666666666667
+      }
+    },
+    {
+      "noise": 0.3,
+      "overall_mean_accuracy": {
+        "last_writer_wins": 0.7095238095238096,
+        "naive_concat": 0.7023809523809524,
+        "branch_discard_always_b": 0.4404761904761904,
+        "confidence_rule": 0.9071428571428566,
+        "three_way_llm": 0.8904761904761901
+      },
+      "resolvable_mean_accuracy": {
+        "last_writer_wins": 0.48333333333333334,
+        "naive_concat": 0.4583333333333333,
+        "branch_discard_always_b": 0.5416666666666666,
+        "confidence_rule": 0.675,
+        "three_way_llm": 0.6666666666666666
+      }
+    },
+    {
+      "noise": 0.5,
+      "overall_mean_accuracy": {
+        "last_writer_wins": 0.719047619047619,
+        "naive_concat": 0.7166666666666668,
+        "branch_discard_always_b": 0.4261904761904759,
+        "confidence_rule": 0.8642857142857139,
+        "three_way_llm": 0.8476190476190472
+      },
+      "resolvable_mean_accuracy": {
+        "last_writer_wins": 0.5166666666666667,
+        "naive_concat": 0.5083333333333333,
+        "branch_discard_always_b": 0.49166666666666664,
+        "confidence_rule": 0.525,
+        "three_way_llm": 0.5166666666666667
+      }
+    }
+  ]
+}

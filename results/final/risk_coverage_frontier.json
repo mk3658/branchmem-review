@@ -1,0 +1,35 @@
+{
+  "note": "post-hoc, exploratory cross-strategy risk-coverage frontier on the locked synthetic set (pooled resolvable+ambiguous, n=180). Deterministic strategies computed zero-API; ThreeWayLLMMerge point taken from the cache-backed abstention report. Two confidence tiers only, so these are achieved operating points, not a swept selective-prediction curve. NOT part of ANALYSIS_PLAN.md confirmatory tests.",
+  "points": {
+    "last_writer_wins": {
+      "coverage": 1.0,
+      "risk": 0.6611111111111111,
+      "commit_rate": 1.0,
+      "conditional_on_commit_accuracy": 0.3388888888888889
+    },
+    "naive_concat": {
+      "coverage": 1.0,
+      "risk": 0.7,
+      "commit_rate": 1.0,
+      "conditional_on_commit_accuracy": 0.3
+    },
+    "branch_discard_always_b": {
+      "coverage": 1.0,
+      "risk": 0.6333333333333333,
+      "commit_rate": 1.0,
+      "conditional_on_commit_accuracy": 0.36666666666666664
+    },
+    "confidence_rule": {
+      "coverage": 0.6666666666666666,
+      "risk": 0.1333333333333333,
+      "commit_rate": 0.6666666666666666,
+      "conditional_on_commit_accuracy": 0.8666666666666667
+    },
+    "three_way_llm": {
+      "coverage": 0.6722222222222223,
+      "risk": 0.1652892561983471,
+      "commit_rate": 0.6722222222222223,
+      "conditional_on_commit_accuracy": 0.8347107438016529
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "note": "post-hoc, exploratory failure-mode diagnostic for semantic_resolvable (n=150, seed=3001). No new API calls: replays cached ThreeWayLLMMerge responses. Phenomenon labels are the authors' manual classification of the 12 templates. NOT part of ANALYSIS_PLAN.md confirmatory tests.",
+  "n_resolvable_keys": 150,
+  "outcome_totals": {
+    "merged": 17,
+    "wrong_commit": 8,
+    "flagged": 125
+  },
+  "by_phenomenon": {
+    "constraint-exclusion": {
+      "merged": 17,
+      "wrong_commit": 8,
+      "flagged": 51
+    },
+    "precondition": {
+      "flagged": 37
+    },
+    "attribute-matching": {
+      "flagged": 25
+    },
+    "numeric-temporal": {
+      "flagged": 12
+    }
+  }
+}

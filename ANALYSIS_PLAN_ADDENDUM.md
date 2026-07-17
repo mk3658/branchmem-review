@@ -102,6 +102,52 @@ Scripts: `scripts/run_cross_vendor_rq1.py`,
 confirmatory or prior post-hoc result — it is additional, disclosed
 evidence on the "single model family" limitation.
 
+## A6. Reviewer-response analyses (added 2026-07-04)
+
+Four additional post-hoc analyses in response to a reviewer request; none
+change any confirmatory or prior post-hoc result.
+
+- **Source-signal-noise sensitivity** (`results/final/noise_sensitivity.json`,
+  `scripts/run_noise_sensitivity.py`): re-scored the identical locked n=60
+  scenarios at noise in {0.0, 0.05, 0.15, 0.30, 0.50}. Zero new API: noise
+  only reassigns ground truth, which the model never sees, so all
+  ThreeWayLLMMerge calls are cache hits. Result: ConfidenceRuleMerge >=
+  ThreeWayLLMMerge at every level, and both decay from ~1.0 to chance
+  (~0.5) as noise -> 0.5, i.e. the LLM/rule advantage over naive baselines
+  is exactly as large as the signal is informative. The boundary condition
+  made continuous.
+- **Semantic-resolvable failure modes**
+  (`results/final/semantic_resolvable_failure_modes.json`,
+  `scripts/analyze_semantic_resolvable_failures.py`): categorized the 150
+  cached semantic_resolvable responses by outcome and reasoning phenomenon
+  (zero new API). Of 150 keys, 0 correct commits: 125 flagged, 17 incoherent
+  merges, 8 wrong commits. All 25 active errors fall in constraint-exclusion
+  / negation templates; precondition, attribute-matching, and
+  numeric-temporal are flagged 100%. Localizes negation/exclusion as the
+  highest-signal target for future semantic-resolution work.
+- **Risk-coverage frontier** (`results/final/risk_coverage_frontier.json`,
+  `scripts/compute_risk_coverage_frontier.py`): each strategy's achieved
+  (coverage, risk) on the pooled locked set. Deterministic strategies
+  zero-API; ThreeWayLLMMerge point reused from the cache-backed abstention
+  report. Naive baselines: coverage 1.0, risk 0.63-0.70; abstaining
+  strategies: risk 0.13-0.17 at coverage ~0.67. Two confidence tiers only,
+  so achieved operating points, not a swept curve (a graded/conformal curve
+  is future work).
+- **Provenance proxy at branch granularity**
+  (`results/final/provenance_proxy.json`, `scripts/run_provenance_proxy.py`):
+  a disjoint-seed (5001) n=60 variant where reliability is presented at
+  branch (replica) granularity instead of per fact. Real API (~60 nano
+  calls). Both ThreeWayLLMMerge and ConfidenceRuleMerge score 0.883
+  resolvable accuracy (p=0.32 between them), on par with the per-fact locked
+  0.858/0.867 -- a coarse per-replica proxy is exploited as well as the
+  per-fact engineered signal, so the boundary condition is about signal
+  presence, not granularity.
+
+Also added: two real citations to `custom.bib`
+(`dong2009integrating`, `li2016survey`) for the truth-discovery /
+knowledge-fusion literature, with a main-text characterization
+(Section 2) and full appendix discussion (Extended Related Work).
+
 ## Standing rule for this addendum
 
 Any further post-hoc analysis added after this point must be appended here

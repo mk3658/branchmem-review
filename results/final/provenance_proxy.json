@@ -1,0 +1,24 @@
+{
+  "note": "post-hoc, exploratory provenance-proxy experiment: reliability signal at BRANCH (replica) granularity instead of per-fact. Same n=60, noise=0.15 as the locked resolvable construction. Tests whether the LLM/rule exploit a coarse per-branch track record as well as the per-fact engineered signal. NOT part of ANALYSIS_PLAN.md confirmatory tests.",
+  "run_metadata": {
+    "seed": 5001,
+    "n_scenarios": 60,
+    "noise": 0.15,
+    "model": "gpt-5.4-nano"
+  },
+  "resolvable_mean_accuracy": {
+    "last_writer_wins": 0.5,
+    "confidence_rule": 0.8833333333333333,
+    "three_way_llm": 0.8833333333333333
+  },
+  "locked_per_fact_reference": {
+    "three_way_llm": 0.858,
+    "confidence_rule": 0.867
+  },
+  "confidence_rule_vs_three_way": {
+    "mean_diff": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "p_value": 1.0
+  }
+}

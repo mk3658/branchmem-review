@@ -136,13 +136,19 @@ scripts/
   run_cross_vendor_rq1.py                    RQ1 replication with a second vendor
   run_cross_vendor_semantic_resolvable.py      semantic_resolvable replication, second vendor
   run_cross_vendor_mab.py                      MAB real-content replication, second vendor
+  run_noise_sensitivity.py                   source-signal-noise sweep (cache-reuse, zero API)
+  analyze_semantic_resolvable_failures.py      per-phenomenon failure-mode breakdown (cache)
+  compute_risk_coverage_frontier.py            cross-strategy risk-coverage frontier
+  run_provenance_proxy.py                      branch-granularity provenance-proxy experiment
 
 results/
   pilot/pilot_summary.json
   final/{results.csv,results.json,stats_output.json,accuracy_by_strategy.png,
           findings.md, semantic_resolvable.json, balanced_detector_benchmark.json,
           abstention_metrics_report.json, category_breakdown_extra_strategies.json,
-          cross_vendor_rq1.json, cross_vendor_semantic_resolvable.json, cross_vendor_mab.json}
+          cross_vendor_rq1.json, cross_vendor_semantic_resolvable.json, cross_vendor_mab.json,
+          noise_sensitivity.json, semantic_resolvable_failure_modes.json,
+          risk_coverage_frontier.json, provenance_proxy.json}
 ```
 
 ## Results summary
@@ -167,6 +173,18 @@ these findings: RQ1's effect holds (0.936 vs. 0.914 on identical
 scenarios), the `semantic_resolvable` category again scores exactly 0.000,
 and the MAB real-content abstention also scores exactly 0.000 — none of
 this is specific to one provider's cheap model.
+
+Further robustness/diagnostic analyses: a **noise sweep** shows the
+boundary condition is continuous (the LLM/rule advantage over naive
+baselines tracks how informative the signal is, decaying to chance as noise
+→ 0.5, with the rule ≥ LLM at every level); a **failure-mode breakdown** of
+the `semantic_resolvable` collapse finds the model attempts resolution only
+on negation/exclusion constraints (and bungles them), abstaining outright
+elsewhere; a **risk-coverage frontier** confirms abstention controls risk
+(0.13–0.17 vs. 0.63–0.70 for never-abstaining baselines); and a
+**provenance-proxy** experiment shows a coarse per-replica reliability
+signal is exploited as well as the per-fact one (0.883 vs. 0.858/0.867), so
+the boundary condition is about signal presence, not granularity.
 
 Conflict detection (cheap embedding/NLI detectors vs. an LLM-judge
 reference) is a genuine **mixed result**: the locked-set precision of 1.0

@@ -58,6 +58,32 @@ OpenAI-specific:
   checks", "Post-hoc secondary analysis: real MemoryAgentBench content",
   and the "Post-hoc Robustness Checks Detail" appendix updated.
 
+## Round 6 (2026-07-04): Reviewer-response analyses
+
+Four post-hoc analyses answering a reviewer's questions; none change any
+prior result:
+
+- **Noise sensitivity** (`scripts/run_noise_sensitivity.py`): boundary
+  condition holds across `source_signal_noise` 0.0-0.5; ConfidenceRule >=
+  LLM at every level; both decay to chance as the signal becomes
+  uninformative. Zero new API (cache reuse).
+- **Semantic-resolvable failure modes**
+  (`scripts/analyze_semantic_resolvable_failures.py`): 0 correct commits of
+  150; 83% flagged; all active errors in constraint-exclusion/negation
+  templates. Zero new API.
+- **Risk-coverage frontier** (`scripts/compute_risk_coverage_frontier.py`):
+  abstaining strategies reach risk 0.13-0.17 at coverage ~0.67 vs.
+  0.63-0.70 for never-abstaining baselines. Zero new API.
+- **Provenance proxy at branch granularity**
+  (`scripts/run_provenance_proxy.py`): a per-replica reliability proxy is
+  exploited as well as the per-fact signal (0.883 vs. 0.858/0.867).
+- **New**: two truth-discovery/knowledge-fusion citations
+  (`dong2009integrating`, `li2016survey`); main-text characterization +
+  Extended Related Work subsection.
+- **Docs**: `ANALYSIS_PLAN_ADDENDUM.md` item A6; paper Sections 2, 5.1, 5.5,
+  5.6, 5.8, Limitations, and Appendices J/K/M updated; two new appendix
+  figures (noise sweep, risk-coverage frontier).
+
 ## Earlier rounds
 
 Phases 0-7 (initial build through `findings.md`), a first review-response
